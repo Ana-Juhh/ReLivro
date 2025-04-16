@@ -1,0 +1,142 @@
+/* Estilo do botão de busca */
+.btn-blue {
+    background-color: #4343d8; /* Cor de fundo azul */
+    color: white; /* Cor do texto em branco */
+}
+
+/* Estilo do botão de busca ao passar o mouse */
+.btn-blue:hover {
+    background-color: darkblue; /* Cor de fundo ao passar o mouse */
+    color: white; /* Cor do texto em branco */
+}
+
+/* Submenu posição */
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+    display: none;
+    position: absolute;
+}
+
+/* Exibir submenu ao passar o mouse */
+.dropdown-submenu:hover .dropdown-menu {
+    display: block;
+}
+
+
+.carousel {
+    margin-bottom: 4rem;
+  }
+  .carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+  }
+  .carousel-item {
+    height: 32rem;
+  }
+
+#myCarousel {
+    height: 500px; 
+}
+
+.carousel-item img {
+    height: 100%; 
+    width: auto; 
+    object-fit: cover; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.img-overlay-container {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .img-overlay-container img {
+    transition: transform 0.3s ease;
+    display: block;
+  }
+
+  .img-overlay-container:hover img {
+    transform: scale(1.05);
+  }
+
+  .img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+  .img-overlay-container:hover .img-overlay {
+    opacity: 1;
+  }
+
+  #card-detalhado {
+    display: none; /* começa escondido */
+  }
+  .card-descricao p {
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+    text-align: justify;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 15px 0;
+    padding: 20px;
+    width: 80%;
+}
+
+.image {
+    max-width: 500px; /* Ajuste o tamanho da imagem */
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.text {
+    flex: 1;
+}
+
+.text h2 {
+    margin: 0 0 10px;
+}
+
+.text p {
+    margin: 0;
+}
+
+
+  
