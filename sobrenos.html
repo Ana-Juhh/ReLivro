@@ -11,26 +11,47 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- Link para CSS-->
      <link rel="stylesheet" href="sobrenos.css">
-    <!-- Barra de navegação -->
-    <nav class="navbar navbar-expand-lg" style="background-color: #121212; color: white;">
-        <div class="container-fluid">
-            <!-- Logo da empresa -->
-            <a class="navbar-brand" href="#">
-                <img src="logorelivro.png" alt="Logo" width="65" height="65">
-            </a>
-            <!-- Botão para alternar a navegação em telas menores -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <!-- Itens de navegação -->
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html" style="color:white">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" style="color:white">Nossos Produtos</a>
-                    </li>
+   <!-- Barra de navegação -->
+   <nav class="navbar navbar-expand-lg" style="background-color: #121212; color: white;">
+    <div class="container-fluid">
+        <!-- Logo da empresa -->
+        <a class="navbar-brand" href="#">
+            <img src="logorelivro.png" alt="Logo" width="80" height="80">
+        </a>
+        <!-- Botão para alternar a navegação em telas menores -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Itens de navegação -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html" style="color:white">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white !important;">
+                        Livros
+                    </a>
+                    <ul class="dropdown-menu">
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#">Novos</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="academicos.html">Acadêmico</a></li>
+                                    <li><a class="dropdown-item" href="arte-cinema-fotografia.html">Arte, Cinema e Fotografia</a></li>
+                                    <li><a class="dropdown-item" href="autoajuda.html">Autoajuda</a></li>
+                                    <li><a class="dropdown-item" href="biografia.html">Biografia e Casos Verdadeiros</a></li>
+                                    <li><a class="dropdown-item" href="crime.html">Crime, Suspense e Mistério</a></li>
+                                    <li><a class="dropdown-item" href="fantasia.html">Fantasia, Horror e Ficção Científica</a></li>
+                                    <li><a class="dropdown-item" href="hqs.html">HQs, Mangás e Graphic Novels</a></li>
+                                    <li><a class="dropdown-item" href="infantilejuvenil.html">Infantil e Infantojuvenil</a></li>
+                                    <li><a class="dropdown-item" href="romances.html">Romance</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item" href="livro.html">Sebo</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="ebooks.html">Ebooks</a></li>
+                        </ul>
+                    </li>                   
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:white">
                             Nossa História
@@ -41,26 +62,33 @@
                             <li><a class="dropdown-item" href="faleconosco.html">Fale Conosco</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="cadastro.html" style="color:white">Cadastre-se</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="login.html" style="color:white">Login</a>
-                </li>
                 </ul>
-                <!-- Formulário de busca -->
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Procurar Produtos" aria-label="Search">
-                  <button class="btn btn-blue" type="submit">Buscar</button>
-              </form>
-              <button type="button" class="btn btn-blue ms-2">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
-                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
-                  </svg>
-            </button>
-            </div>
+
+             <!--botao para apagina de favoritos-->
+                <a class="favorito" href="Favaoritos.html"> Favoritos </a>
+            
+            <!-- Formulário de busca -->
+            <form class="d-flex" role="search" >
+              <input class="form-control me-2" type="search" placeholder="Procurar Livros" aria-label="Search">
+              <button class="btn btn-blue" type="submit">Buscar</button>
+          </form>
+          <button type="button" class="btn btn-blue ms-2"> 
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+            </svg>
+            <a href="carrinho.html" class="btn btn-blue ms-2">Carrinho</a>
+              
+        </button>
+        <button type="button" class="btn btn-blue ms-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+            <path d="M3 14s-1 0-1-1 1-3 4-3 4 3 4 3 1 0 1 1-1 1-4 1-4-1-4-1zm2-4a2 2 0 1 1 4 0 2 2 0 0 1-4 0zM8 0a5 5 0 0 0-5 5c0 2.69 2.01 4.86 4.5 5V10a1 1 0 0 1 1 1h1a1 1 0 0 1 1-1V5.5C10 4.01 8.19 2 6 2a5 5 0 0 0-1 10h3a1 1 0 0 1 1-1V5c0-1.42-.87-3-2-3z"/>
+          </svg>
+          <a href="login.html" class="btn btn-blue ms-2">Cadastro</a>
+        </button>
         </div>
-    </nav>
+    </div>
+</nav>
+</head>
 </head>
 <body>
  
@@ -69,24 +97,32 @@
   <div class="section">
       <img src="bloco1.jpg" alt="Pai com filhas acessando a internet" class="image">
       <div class="text">
-          <h2>Objetivo</h2>
-          <p>A ReLivro nasce com o desafio de transformar a forma como os livros circulam no Brasil.</p>
+          <h2>Quem somos</h2>
+          <p>A ReLivro surgiu do sonho de um casal apaixonado por livros e sustentabilidade, com a missão de democratizar o acesso à leitura e dar nova vida a exemplares esquecidos. Fundada por uma bibliotecária e um empreendedor, a plataforma vende livros novos e usados com curadoria criteriosa, garantindo qualidade e diversidade no catálogo. Com uma interface acessível e foco na preservação ambiental, a ReLivro atrai uma comunidade engajada que compartilha valores como amor pela leitura e consciência ecológica. Além disso, promove ações sociais e se destaca como um movimento cultural que transforma histórias passadas em novas experiências de leitura.</p>
       </div>
   </div>
 
   <div class="section">
-      <img src="bloco2.jpg" alt="Casa Inteligente" class="image">
+      <img src="bloco2.jpg" alt="prateleiras com livros" class="image">
       <div class="text">
           <h2>Missão</h2>
-          <p> Nosso missão é facilitar o acesso a leitura por meio da compra, venda e doação de livros usados, promovendo o cunsumo consciente.</p>
+          <p>Facilitar o acesso à leitura, promovendo a economia circular por meio da compra e venda
+            de livros usados, incentivando a cultura e o consumo sustentável.</p>
+          <h3>Visão</h3>
+          <p>Ser a principal plataforma online de compra e venda de livros usados no Brasil, tornando a
+            leitura acessível a todos e fomentando a reutilização de livros.</p>
       </div>
   </div>
 
   <div class="section">
-      <img src="bloco3.jpg" alt="Mulher mechendo no computador" class="image">
+      <img src="bloco3.jpg" alt="prateleiras e livros identificados" class="image">
       <div class="text">
-          <h2>Visão</h2>
-          <p>Ser reconhecida como uma das principais plataformas de livros, tornando a leitura mais acessível, sustentável e conectando com as necessidades das novas gerações.</p>
+          <h2>Valores</h2>
+          <p><strong>Sustentabilidade:</strong> Reduzir o desperdício e incentivar o reaproveitamento de livros.</p>
+          <p><strong>Acessibilidade:</strong> Democratizar o acesso à leitura a preços acessíveis.</p>
+          <p><strong>Segurança:</strong> Garantir um ambiente confiável para compradores e vendedores.</p>
+          <p><strong>Inovação:</strong> Melhorar continuamente a experiência do usuário.</p>
+          <p><strong>Comunidade:</strong> Criar uma rede de leitores apaixonados por livros.</p>
 </div>
 
 </div>
@@ -111,15 +147,15 @@
             <li><a class="link-secondary text-decoration-none" href="#">Conteúdo</a></li>
             <li><a class="link-secondary text-decoration-none" href="#">Suporte</a></li>
             <li><a class="link-secondary text-decoration-none" href="#">Comunidade</a></li>
+            <li><a class="link-secondary text-decoration-none" href="blog.html">Blog</a></li>
           </ul>
         </div>
         <div class="col-6 col-md">
           <h5>Sobre</h5>
           <ul class="list-unstyled text-small">
-            <li><a class="link-secondary text-decoration-none" href="#">Nossa História</a></li>
+            <li><a class="link-secondary text-decoration-none" href="#">Sobre nós</a></li>
             <li><a class="link-secondary text-decoration-none" href="#">Missão e Visão</a></li>
             <li><a class="link-secondary text-decoration-none" href="#">Equipe</a></li>
-            <li><a class="link-secondary text-decoration-none" href="#">Parceiros</a></li>
           </ul>
         </div>
       </div>

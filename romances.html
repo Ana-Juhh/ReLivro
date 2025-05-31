@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romance</title>
+     <!-- Definindo a codificação de caracteres para UTF-8 -->
+    <meta charset="utf-8">
+    <!-- Configurando a visualização para dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Relivro</title>
+    
+    <!-- Link para o CSS do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Link para CSS-->
+     <link rel="stylesheet" href="style.css">
+    <!-- Barra de navegação -->
+    <nav class="navbar navbar-expand-lg" style="background-color: #121212; color: white;">
+        <div class="container-fluid">
+            <!-- Logo da empresa -->
+            <a class="navbar-brand" href="#">
+                <img src="logorelivro.png" alt="Logo" width="80" height="80">
+            </a>
+            <!-- Botão para alternar a navegação em telas menores -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Itens de navegação -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html" style="color:white">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white !important;">
+                            Livros
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#">Novos</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="academicos.html">Acadêmico</a></li>
+                                    <li><a class="dropdown-item" href="arte-cinema-fotografia.html">Arte, Cinema e Fotografia</a></li>
+                                    <li><a class="dropdown-item" href="autoajuda.html">Autoajuda</a></li>
+                                    <li><a class="dropdown-item" href="biografia.html">Biografia e Casos Verdadeiros</a></li>
+                                    <li><a class="dropdown-item" href="crime.html">Crime, Suspense e Mistério</a></li>
+                                    <li><a class="dropdown-item" href="fantasia.html">Fantasia, Horror e Ficção Científica</a></li>
+                                    <li><a class="dropdown-item" href="hqs.html">HQs, Mangás e Graphic Novels</a></li>
+                                    <li><a class="dropdown-item" href="infantilejuvenil.html">Infantil e Infantojuvenil</a></li>
+                                    <li><a class="dropdown-item" href="romances.html">Romance</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item" href="livro.html">Sebo</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="ebooks.html">Ebooks</a></li>
+                        </ul>
+                    </li>                   
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:white">
+                            Nossa História
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="sobrenos.html">Sobre Nós</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="faleconosco.html">Fale Conosco</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!--botao para apagina de favoritos-->
+                <a class="favorito" href="Favaoritos.html"> Favaoritos </a>
+                
+                <!-- Formulário de busca -->
+                <form class="d-flex" role="search" >
+                  <input class="form-control me-2" type="search" placeholder="Procurar Livros" aria-label="Search">
+                  <button class="btn btn-blue" type="submit">Buscar</button>
+              </form>
+              <button type="button" class="btn btn-blue ms-2"> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                </svg>
+                <a href="carrinho.html" class="btn btn-blue ms-2">Carrinho</a>
+                  
+            </button>
+            <button type="button" class="btn btn-blue ms-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                <path d="M3 14s-1 0-1-1 1-3 4-3 4 3 4 3 1 0 1 1-1 1-4 1-4-1-4-1zm2-4a2 2 0 1 1 4 0 2 2 0 0 1-4 0zM8 0a5 5 0 0 0-5 5c0 2.69 2.01 4.86 4.5 5V10a1 1 0 0 1 1 1h1a1 1 0 0 1 1-1V5.5C10 4.01 8.19 2 6 2a5 5 0 0 0-1 10h3a1 1 0 0 1 1-1V5c0-1.42-.87-3-2-3z"/>
+              </svg>
+              <a href="login.html" class="btn btn-blue ms-2">Cadastro</a>
+            </button>
+            </div>
+        </div>
+    </nav>
+</head>
+<body>
+    <body>
+ <!--Mais Vendidos-->
+ <section style="background-color: #eee;">
+    <div class="text-center container py-5">
+      <h4 class="mt-4 mb-5"><strong>Romance</strong></h4>
+      <section style="background-color: #eee;">
+
+        <section class="produtos mt-5">
+            <div class="container">
+              <div class="row">
+                <!-- Produto 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="img-overlay-container" onclick="mostrarCard('detalhe1')">
+                      <img src="romance1.jpg" class="w-100"  />
+                      <div class="img-overlay">Ver mais</div>
+                    </div>
+                  </div>
+                <!-- Produto 2 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="img-overlay-container" onclick="mostrarCard('detalhe2')">
+                        <img src="romance2.jpg" class="w-100" />
+                        <div class="img-overlay">Ver mais</div>
+                      </div>
+                </div>
+                 <!-- Produto 3 -->
+                 <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="img-overlay-container" onclick="mostrarCard('detalhe3')">
+                        <img src="romance3.jpg" class="w-100" />
+                        <div class="img-overlay">Ver mais</div>
+                      </div>
+                  </div>
+                   <!-- Produto 4 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="img-overlay-container" onclick="mostrarCard('detalhe4')">
+                        <img src="romance4.jpg" class="w-100" />
+                        <div class="img-overlay">Ver mais</div>
+                      </div>
+                  </div>
+                   <!-- Produto 5 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="img-overlay-container" onclick="mostrarCard('detalhe5')">
+                        <img src="romance5.jpg" class="w-100" />
+                        <div class="img-overlay">Ver mais</div>
+                      </div>
+                  </div>
+                   <!-- Produto 6 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="img-overlay-container" onclick="mostrarCard('detalhe6')">
+                        <img src="romance6.jpg" class="w-100" />
+                        <div class="img-overlay">Ver mais</div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </section>
+          
+          <!-- CARDS DETALHADOS -->
+          <section id="detalhe1" class="card-detalhado" style="background-color: #eee; display: none;">
+            <div class="container py-4">
+              <div class="card" style="border-radius: 15px;">
+                <div class="row g-0">
+                  
+                  <div class="col-md-5">
+                    <img id="img-detalhada" src="romance1.jpg"
+                      class="img-fluid rounded-start w-100 h-100" alt="Produto" style="object-fit: cover;" />
+                  </div>
+        
+                  <div class="col-md-7">
+                    <div class="card-body d-flex flex-column h-100 justify-content-between">
+                      <div>
+                        <h5 class="card-title titulo-produto">Táticas do amor</h5>
+                        <p class="text-muted small descricao-produto">Por Sarah Adams (Autor), Sofia Soter (Tradutor)<br><br>
+                          Bree Camden está totalmente apaixonada por seu amigo de longa data, a lenda do futebol americano Nathan 
+                          Donelson. O único problema é que ela não pode revelar seus sentimentos, porque ele claramente a enxerga 
+                          apenas como sua melhor amiga, sem nenhum potencial para algo mais. Mas tudo bem: a última coisa que 
+                          Bree deseja é arruinar a relação dos dois.
+                          De qualquer forma, ela tem outras preocupações em mente. Após um acidente que acabou com suas chances 
+                          de virar bailarina profissional, Bree decide mudar de plano e abre um estúdio, determinada a transformar 
+                          a vida de suas alunas por meio da dança. No entanto, após outro aumento no aluguel do imóvel, ela corre 
+                          sério risco de ver novamente seus sonhos irem por água abaixo.
+                          É então que Nathan aparece para salvar o dia ― e compra o prédio inteiro para ela. Revoltada com esse
+                           gesto impulsivo, apesar de bem-intencionado, Bree exagera nas tequilas. É aí que tudo começa a desandar:
+                            ela acaba confessando seus segredos mais profundos para uma jornalista de um site de fofoca. Então, 
+                            um vídeo seu viraliza, e o mundo inteiro começa a achar que Nathan e Bree são o casal perfeito.
+                          Antes que ela pare para pensar em tudo que revelou por culpa do álcool, a assessoria de imprensa de 
+                          Nathan oferece à bailarina uma baita oportunidade, que pode significar a tão sonhada segurança financeira
+                           para Bree. O plano? Eles precisam fingir que estão apaixonados. Por três semanas inteiras.
+                          Em Táticas do amor, a maravilhosa comédia romântica de Sarah Adams que foi sensação no TikTok, a 
+                          paixão e a amizade são capazes de provocar as maiores reviravoltas. A questão é: será que é cedo ― ou
+                           tarde ― demais para abrir o coração?</p>
+                        <p class="card-text text-dark fw-bold fs-5 preco-produto">R$ 48.90</p>
+                      </div>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <a href="#!" class="text-dark fw-bold" onclick="fecharCards()">Fechar</a>
+                        <button class="btn-favorito" id="heart-67" onclick="toggleFavorito(67, 'Táticas do amor', 48.90, 'romance1.jpg')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="heart-icon">
+                      <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                    </svg>
+                  </button>
+                        <button class="btn btn-primary" onclick="adicionarCarrinho(this)">Adicionar ao carrinho</button>
+
+                      </div>
+                    </div>
+                  </div>
+          
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="detalhe2" class="card-detalhado" style="background-color: #eee; display: none;">
+            <div class="container py-4">
+              <div class="card" style="border-radius: 15px;">
+                <div class="row g-0">
+                  
+                  <div class="col-md-5">
+                    <img id="img-detalhada" src="romance2.jpg"
+                      class="img-fluid rounded-start w-100 h-100" alt="Produto" style="object-fit: cover;" />
+                  </div>
+        
+                  <div class="col-md-7">
+                    <div class="card-body d-flex flex-column h-100 justify-content-between">
+                      <div>
+                        <h5 class="card-title titulo-produto">Não é como nos filmes: (Melhor do que nos filmes – vol. 2)</h5>
+                        <p class= "text-muted small descricao-produto">Por Lynn Painter (Autor), Alessandra Esteche (Tradutor)<br><br>
+                         Wes e Liz viveram uma história de amor inesquecível e foram juntos para a Universidade da Califórnia. 
+                         Mas o universo parecia ter outros planos para eles. De uma hora para outra, a vida de Wes virou de 
+                         ponta-cabeça, e ele precisou voltar para casa e tomar uma decisão inesperada: terminar com Liz.
+                        Dois anos depois, Wes convence os treinadores, ganha outra chance no time e volta à universidade. 
+                        Mais maduro e determinado, ele vai fazer de tudo para reconquistar a garota dos seus sonhos. E conta 
+                        com um plano perfeito para isso.
+                        Liz, por outro lado, não parece disposta a facilitar as coisas. Afinal, não é tão simples perdoar o
+                         garoto que partiu seu coração. Além disso, ela precisa conciliar as aulas com um emprego e um estágio
+                          superimportante, mas o reencontro com Wes abala suas certezas. E tudo fica mais complicado quando 
+                          ela começa a acompanhar a equipe de beisebol para um documentário.
+                        Só que… Liz tem um novo namorado. Então talvez seja tarde demais para Wes reconquistar a garota que 
+                        ele ama. Será que os dois estão dispostos a reescrever essa história? Ou será que, na vida real, 
+                        o “felizes para sempre” não é como nos filmes?
+                        Muito aguardada pelos fãs, a sequência do best-seller Melhor do que nos filmes faz inúmeras 
+                        referências às músicas da Taylor Swift e a clássicos da comédia romântica e alterna os pontos de 
+                        vista entre Wes e Liz.</p>
+                        <p class= "card-text text-dark fw-bold fs-5 preco-produto">R$ 46.24</p>
+                      </div>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <a href="#!" class="text-dark fw-bold" onclick="fecharCards()">Fechar</a>
+                        <button class="btn-favorito" id="heart-68" onclick="toggleFavorito(68, 'Não é como nos filmes: Melhor do que nos filmes – vol. 2', 46.24, 'romance2.jpg')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="heart-icon">
+                      <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                    </svg>
+                  </button>
+                        <button class="btn btn-primary" onclick="adicionarCarrinho(this)">Adicionar ao carrinho</button>
+
+                      </div>
+                    </div>
+                  </div>
+          
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="detalhe3" class="card-detalhado" style="background-color: #eee; display: none;">
+            <div class="container py-4">
+              <div class="card" style="border-radius: 15px;">
+                <div class="row g-0">
+                  
+                  <div class="col-md-5">
+                    <img id="img-detalhada" src="romance3.jpg"
+                      class="img-fluid rounded-start w-100 h-100" alt="Produto" style="object-fit: cover;" />
+                  </div>
+        
+                  <div class="col-md-7">
+                    <div class="card-body d-flex flex-column h-100 justify-content-between">
+                      <div>
+                        <h5 class= "card-title titulo-produto">Amor, teoricamente </h5>
+                        <p class= "text-muted small descricao-produto">Por Ali Hazelwood (Autor), Roberta Clapp (Tradutor)<br><br>      
+                            Elsie Hannaway é uma física teórica que passou anos de sua vida moldando diferentes versões 
+                            de si mesma. Em alguns dias, ela trabalha como professora adjunta, na esperança de conseguir um 
+                            emprego melhor. Em outros, compensa seu ridículo salário oferecendo serviços de namorada de mentira, 
+                            aproveitando sua habilidade de se adaptar exatamente ao que os outros querem dela.
+                            Apesar das dificuldades, ela consegue equilibrar bem seu cuidadoso “Elsie-verso”... até que ele 
+                            começa a desabar. E o culpado é Jack Smith, o irritante e atraente irmão mais velho de seu cliente
+                             favorito, que acaba se revelando um importante físico experimental e um possível obstáculo para 
+                             o emprego dos sonhos de Elsie.
+                            Ela está pronta para uma guerra declarada de sabotagens acadêmicas, mas não está nem um pouco
+                             preparada para aqueles olhares demorados e penetrantes. E logo ela percebe que não precisa
+                              fingir ser outra pessoa quando está com Jack.
+                            Será que ser atraída pela órbita de um cientista vai enfim fazê-la colocar em prática suas 
+                            mais secretas teorias sobre o amor?</p>
+                        <p class= "card-text text-dark fw-bold fs-5 preco-produto">R$ 39.92</p>
+                      </div>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <a href="#!" class="text-dark fw-bold" onclick="fecharCards()">Fechar</a>
+                        <button class="btn-favorito" id="heart-69" onclick="toggleFavorito(69, 'Amor, teoricamente', 39.92, 'romance3.jpg')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="heart-icon">
+                      <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                    </svg>
+                  </button>
+                        <button class="btn btn-primary" onclick="adicionarCarrinho(this)">Adicionar ao carrinho</button>
+
+                      </div>
+                    </div>
+                  </div>
+          
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="detalhe4" class="card-detalhado" style="background-color: #eee; display: none;">
+            <div class="container py-4">
+              <div class="card" style="border-radius: 15px;">
+                <div class="row g-0">
+                  
+                  <div class="col-md-5">
+                    <img id="img-detalhada" src="romance4.jpg"
+                      class="img-fluid rounded-start w-100 h-100" alt="Produto" style="object-fit: cover;" />
+                  </div>
+        
+                  <div class="col-md-7">
+                    <div class="card-body d-flex flex-column h-100 justify-content-between">
+                      <div>
+                        <h5 class="card-title titulo-produto">Uma farsa de amor na Espanha </h5>
+                        <p class="text-muted small descricao-produto"> Por Elena Armas (Autor), Alessandra Esteche (Tradutor)<br><br>
+                        Uma viagem à Espanha, o homem mais irritante do mundo e três dias para convencer todo mundo de que vocês 
+                        estão realmente apaixonados. Em outras palavras, um plano que nunca vai dar certo...
+                        Catalina Martín é uma jovem espanhola que trabalha como engenheira em Nova York. Com o casamento 
+                        da irmã se aproximando, ela precisa desesperadamente de um acompanhante, porque não quer encarar 
+                        sozinha toda a família e, principalmente, o irmão do noivo, que é ninguém menos do que seu ex.
+                        Sentindo-se pressionada, ela conta uma mentirinha inofensiva sobre ter um namorado americano. E 
+                        agora todos em sua pequena cidade estão ansiosos para conhecê-lo.
+                        Lina tem apenas um mês para encontrar alguém disposto a cruzar o Atlântico com ela e participar
+                         da sua farsa. Mesmo assim, quando Aaron Blackford, seu colega de trabalho, se candidata à vaga 
+                         de namorado de faz de conta, ela se recusa a aceitar. Embora ele seja alto, charmoso e lindo de
+                          morrer, também é condescendente, exasperante e insuportável.
+                        Porém, quanto mais o casamento se aproxima, mais tentadora se torna a oferta.
+                        Enquanto os dois se perguntam se serão capazes de sustentar a história por um final de semana
+                         inteiro, Lina começa a perceber que, na vida real, talvez Aaron não seja tão 
+                         terrível quanto é no escritório...</p>
+                        <p class="card-text text-dark fw-bold fs-5 preco-produto">R$ 33.90</p>
+                      </div>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <a href="#!" class="text-dark fw-bold" onclick="fecharCards()">Fechar</a>
+                        <button class="btn-favorito" id="heart-70" onclick="toggleFavorito(70, 'Uma farsa de amor na Espanha', 33.90, 'romance4.jpg')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="heart-icon">
+                      <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                    </svg>
+                  </button>
+                        <button class="btn btn-primary" onclick="adicionarCarrinho(this)">Adicionar ao carrinho</button>
+
+                      </div>
+                    </div>
+                  </div>
+          
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="detalhe5" class="card-detalhado" style="background-color: #eee; display: none;">
+            <div class="container py-4">
+              <div class="card" style="border-radius: 15px;">
+                <div class="row g-0">
+                  
+                  <div class="col-md-5">
+                    <img id="img-detalhada" src="romance5.jpg"
+                      class="img-fluid rounded-start w-100 h-100" alt="Produto" style="object-fit: cover;" />
+                  </div>
+        
+                  <div class="col-md-7">
+                    <div class="card-body d-flex flex-column h-100 justify-content-between">
+                      <div>
+                        <h5 class="card-title titulo-produto">Quebrando o gelo</h5>
+                        <p class="text-muted small descricao-produto">Por Hannah Grace (Autor), Bruna Miranda (Tradutor)<br><br>
+                           Tudo que Anastasia Allen sempre quis foi entrar para a equipe olímpica de patinação artística,
+                            e ter conseguido uma bolsa e uma vaga no time da Universidade da Califórnia foi um passo rumo 
+                            ao seu objetivo. Nada vai ficar no seu caminho ― nem mesmo o capitão do time de hóquei, Nate Hawkins.
+                           O papel de Nate, como capitão, é manter seus rapazes no rinque, o que se torna difícil quando 
+                           um ato de vandalismo força os atletas do hóquei a dividirem o espaço com a equipe de patinação 
+                           artística ― incluindo Anastasia, que claramente não vai nem um pouco com a cara dele.
+                           Mas quando o parceiro de Tasi sofre um acidente e o sonho de competir nos Jogos Olímpicos 
+                           parece em risco, Nate acaba se tornando sua última esperança de fazer todos os seus sacrifícios valerem a pena.
+                           Conforme os dois se aproximam, em meio a festanças, discussões acaloradas e trocas de farpas, 
+                           Anastasia percebe que talvez Nate não seja tão mau assim. Na verdade, até que ele é simpático… e 
+                           bonito… e gostoso. Logo os dois estão resolvendo suas diferenças e descontando as frustrações na 
+                           cama ― com fogo o bastante para derreter qualquer gelo. Mas Anastasia não fica preocupada: sabe 
+                           bem quais são suas prioridades, e não tem a menor chance de se apaixonar
+                            por um brutamontes do hóquei... certo?</p>
+                        <p class="card-text text-dark fw-bold fs-5 preco-produto">R$ 45.80</p>
+                      </div>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <a href="#!" class="text-dark fw-bold" onclick="fecharCards()">Fechar</a>
+                        <button class="btn-favorito" id="heart-71" onclick="toggleFavorito(71, 'Quebrando o gelo', 45.80, 'romance5.jpg')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="heart-icon">
+                      <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                    </svg>
+                  </button>
+                        <button class="btn btn-primary" onclick="adicionarCarrinho(this)">Adicionar ao carrinho</button>
+
+                      </div>
+                    </div>
+                  </div>
+          
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="detalhe6" class="card-detalhado" style="background-color: #eee; display: none;">
+            <div class="container py-4">
+              <div class="card" style="border-radius: 15px;">
+                <div class="row g-0">
+                  
+                  <div class="col-md-5">
+                    <img id="img-detalhada" src="romance6.jpg"
+                      class="img-fluid rounded-start w-100 h-100" alt="Produto" style="object-fit: cover;" />
+                  </div>
+        
+                  <div class="col-md-7">
+                    <div class="card-body d-flex flex-column h-100 justify-content-between">
+                      <div>
+                        <h5 class="card-title titulo-produto">A babá</h5>
+                        <p class="text-muted small descricao-produto"> Por Lana Ferguson (Autor), Gabriela Peres Gomes (Tradutor)<br><br>
+                          A vida de Cassie Evans está um verdadeiro caos. Ela foi demitida de uma hora para outra, não tem um 
+                          centavo no bolso e está prestes a ser despejada. Precisa desesperadamente de um novo trabalho.
+                          Enquanto busca uma oportunidade, Cassie decide reativar sua velha conta no OnlyFans – usada apenas 
+                          em casos de extrema necessidade. Porém, o que começa como uma forma de levantar uma grana rápida, 
+                          se mostra um negócio muito mais divertido e sexy do que ela poderia imaginar. Tudo graças a um 
+                          cliente misterioso, inteligente, gato, gentil e que sempre dá gorjetas generosas.
+                          Só que quando Cassie finalmente consegue um emprego – como babá da filha de um viúvo rico – e 
+                          decide largar a plataforma, ela descobre que o seu novo chefe está longe de ser um estranho, mas 
+                          sim alguém que está muito familiarizado com ela, ou pelo menos com seu corpo. Sim, ele é o seu antigo 
+                          cliente do OnlyFans, o homem mais sexy em que Cassie já colocou os olhos.
+                          Devidamente apresentados, ela conhece sua real identidade: Aiden Reid, um renomado chef de cozinha, 
+                          pai de Sophie, uma doce garotinha. Ele não a reconhece, já que Cassie também não revelava seu rosto e, 
+                          apesar do risco, ela não tem outra saída a não ser aceitar o emprego.
+                          Mas, quando a química que os envolvia sai das telas para a vida real, Cassie precisa tomar a decisão 
+                          mais difícil de sua vida: revelar ou não quem realmente é, o que pode pôr em risco uma história de 
+                          amor avassaladora, daquelas que ela acreditava só acontecer nos filmes.
+                          A babá é um romance hot de tirar o fôlego, ideal para os fãs de Cinquenta tons de cinza e Uma ideia de você.</p>
+                        <p class="card-text text-dark fw-bold fs-5 preco-produto">R$ 21.07</p>
+                      </div>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <a href="#!" class="text-dark fw-bold" onclick="fecharCards()">Fechar</a>
+                        <button class="btn-favorito" id="heart-72" onclick="toggleFavorito(72, 'A babá', 21.07, 'romance6.jpg')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="heart-icon">
+                      <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                    </svg>
+                  </button>
+                        <button class="btn btn-primary" onclick="adicionarCarrinho(this)">Adicionar ao carrinho</button>
+
+                      </div>
+                    </div>
+                  </div>
+          
+                </div>
+              </div>
+            </div>
+          </section>
+
+<hr>
+<div class="container card-center">
+  <div class="card shadow p-4 w-100" style="max-width: 500px;">
+    <h4 class="card-title text-center mb-4">Avaliação</h4>
+    <form id="avaliacaoForm">
+      <div class="mb-3 text-center">
+        <div class="rating">
+          <input type="radio" id="star5" name="estrela" value="5">
+          <label for="star5">&#9733;</label>
+          <input type="radio" id="star4" name="estrela" value="4">
+          <label for="star4">&#9733;</label>
+          <input type="radio" id="star3" name="estrela" value="3">
+          <label for="star3">&#9733;</label>
+          <input type="radio" id="star2" name="estrela" value="2">
+          <label for="star2">&#9733;</label>
+          <input type="radio" id="star1" name="estrela" value="1">
+          <label for="star1">&#9733;</label>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="comentario" class="form-label">Comentário</label>
+        <textarea class="form-control" id="comentario" rows="4" placeholder="Digite seu comentário..."></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary w-100">Enviar</button>
+    </form>
+    <div id="resultado" class="mt-4 text-center"></div>
+  </div>
+</div>
+      
+<script>
+  document.getElementById("avaliacaoForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const estrelas = document.querySelector('input[name="estrela"]:checked');
+    const comentario = document.getElementById("comentario").value.trim();
+
+    if (!estrelas) {
+      alert("Por favor, selecione uma nota.");
+      return;
+    }
+    if (comentario === "") {
+      alert("Por favor, escreva um comentário.");
+      return;
+    }
+    const nota = estrelas.value;
+    const resultado = document.getElementById("resultado");
+    resultado.innerHTML = `<p class="text-success">Avaliação enviada com sucesso!<br>Nota: ${nota} estrelas<br>Comentário: ${comentario}</p>`;
+  });
+</script>
+                
+    <!--Rodapé-->
+    <footer class="container py-5">
+      <div class="row">
+        <div class="col-12 col-md">
+          <img src="logorelivro.png" width="35" height="35" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
+          <small class="d-block mb-3 text-body-secondary">&copy; 2019–2025</small>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Características</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="link-secondary text-decoration-none" href="#">Funcionalidades</a></li>
+            <li><a class="link-secondary text-decoration-none" href="#">Monitoramento</a></li>
+            <li><a class="link-secondary text-decoration-none" href="#">Segurança</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Recursos</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="link-secondary text-decoration-none" href="#">Conteúdo</a></li>
+            <li><a class="link-secondary text-decoration-none" href="#">Suporte</a></li>
+            <li><a class="link-secondary text-decoration-none" href="#">Comunidade</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Sobre</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="link-secondary text-decoration-none" href="#">Nossa História</a></li>
+            <li><a class="link-secondary text-decoration-none" href="#">Missão e Visão</a></li>
+            <li><a class="link-secondary text-decoration-none" href="#">Equipe</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    
+
+    <!-- Script do Bootstrap para funcionalidades interativas -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        document.querySelectorAll('.dropdown-submenu > a').forEach(function(element) {
+            element.addEventListener('click', function(e) {
+                let submenu = this.nextElementSibling;
+                if (submenu.style.display === 'block') {
+                    submenu.style.display = 'none';
+                } else {
+                    submenu.style.display = 'block';
+                }
+                e.stopPropagation();
+                e.preventDefault();
+            });
+        });
+
+        function mostrarCard(id) {
+    fecharCards();
+    const card = document.getElementById(id);
+    card.style.display = 'block';
+    card.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+  function fecharCards() {
+    const cards = document.querySelectorAll('.card-detalhado');
+    cards.forEach(card => card.style.display = 'none');
+  }
+
+  function adicionarCarrinho(botao) {
+  const card = botao.closest('.card-detalhado');
+  const nome = card.querySelector('.titulo-produto').innerText;
+  const preco = card.querySelector('.preco-produto').innerText.replace("R$", "").trim();
+  const imagem = card.querySelector("img").getAttribute("src");
+
+  const produto = {
+    nome: nome,
+    preco: preco,
+    imagem: imagem,
+    quantidade: 1
+  };
+
+  const carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+
+  
+  const indexExistente = carrinho.findIndex(p => p.nome === produto.nome);
+  if (indexExistente > -1) {
+    carrinho[indexExistente].quantidade += 1;
+  } else {
+    carrinho.push(produto);
+  }
+
+  localStorage.setItem("carrinho", JSON.stringify(carrinho));
+
+  
+  mostrarMensagem(`📚 "${produto.nome}" foi adicionado ao carrinho!`, 'success');
+}
+
+// Gerenciamento de favoritos
+let favoritos = JSON.parse(localStorage.getItem('livrosFavoritos')) || [];
+
+function toggleFavorito(id, titulo, preco, imagem) {
+  const livro = {
+    id: id,
+    titulo: titulo,
+    preco: preco,
+    imagem: imagem,
+    conteudo: titulo, 
+    descricao: titulo 
+  };
+  
+  const index = favoritos.findIndex(fav => fav.id === id);
+  const heartBtn = document.querySelector(`#heart-${id}`);
+  
+  if (index === -1) {
+    favoritos.push(livro);
+    heartBtn.classList.add('heart-filled');
+    heartBtn.querySelector('.heart-icon').setAttribute('fill', 'red');
+    mostrarMensagem(`"${titulo}" foi adicionado aos favoritos!`, 'success');
+  } else {
+    favoritos.splice(index, 1);
+    heartBtn.classList.remove('heart-filled');
+    heartBtn.querySelector('.heart-icon').setAttribute('fill', 'none');
+    mostrarMensagem(`"${titulo}" foi removido dos favoritos.`, 'info');
+  }
+  
+  localStorage.setItem('livrosFavoritos', JSON.stringify(favoritos));
+}
+
+function mostrarMensagem(texto, tipo) {
+  const mensagemExistente = document.querySelector('.mensagem');
+  if (mensagemExistente) {
+    mensagemExistente.remove();
+  }
+
+  const mensagem = document.createElement('div');
+  mensagem.textContent = texto;
+  mensagem.className = `mensagem ${tipo}`;
+  document.body.appendChild(mensagem);
+  
+  setTimeout(() => {
+    mensagem.remove();
+  }, 3000);
+}
+
+    </script>
+    
+</body>
+</body>
+</html>
