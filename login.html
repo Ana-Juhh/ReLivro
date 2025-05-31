@@ -2,16 +2,110 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMmF4x1g1g6mWlFz7mV1v1W4p3F1n7F1pN5S4E" crossorigin="anonymous">
 </head>
 <body>
-    <h2>Login</h2>
-    <form action="login" method="post">
-        <label>Email:</label>
-        <input type="email" name="email" required><br><br>
-        <label>Senha:</label>
-        <input type="password" name="senha" required><br><br>
-        <button type="submit">Entrar</button>
-    </form>
-</body>
+    <style>
+    .botoes-login
+  {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 20px;
+      align-items: center;
+      color: black !important; /* Garante que o texto dentro da div tenha cor preta */
+    }
+    
+    .botoes-login .btn
+    {
+      /* Garantir que os botões sigam o estilo desejado, sobrescrevendo o estilo Bootstrap se necessário */
+      width: auto; /* Evita que o botão se estique demais */
+      padding: 10px 30px;
+      border-radius: 5px;
+      font-size: 1.1rem
+    }
+    
+    .botoes-login .btn-primary
+    {
+      background-color: #2a52be !important;
+      color: white !important;
+      border: none !important
+    }
+    
+    .botoes-login .btn-primary:hover
+    {
+      background-color: #1e3e8b !important;
+    }
+
+    .botoes-login .btn-lg
+    {
+      padding: 10px 30px;
+      font-size: 1.1rem;
+      text-align: center;
+    }
+
+    </style>
+    <section class="vh-100" style="background-color: black">
+      <a href="index.html">
+        <img src="logorelivro.png" title="Página inicial" alt="Página incial" width="80" height="80">
+      </a>
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+              <div class="card shadow-2-strong" style="border-radius: 1rem;">
+                <div class="card-body p-5 text-center">
+                  <!-- Form e-mail e senha -->
+                    <div data-mdb-input-init class="form-outline mb-4">
+                      <input type="email" id="typeEmailX-2" class="form-control form-control-lg" />
+                      <label class="form-label" for="typeEmailX-2">Email</label>
+                    </div>
+        
+                    <div data-mdb-input-init class="form-outline mb-4">
+                      <input type="password" id="typePasswordX-2" class="form-control form-control-lg" />
+                      <label class="form-label" for="typePasswordX-2" >Senha</label>
+                    </div>      
+                  <!-- Checkbox -->
+                  <div class="form-check d-flex justify-content-start mb-4">
+                    <input class="form-check-input" type="checkbox" value="" id="form1Example3" style=" margin-right: 10px;"/>
+                    <label class="form-check-label" for="form1Example3"> Lembrar Senha </label>
+                  </div>
+                  <!-- Botão login -->
+                  <p><a class="btn btn-lg btn-primary" href="cadastro.html" style="width: 300px; border-radius: 25px;">Entrar</a></p>
+                  <div class="botoes-login">
+                    <p><a class="btn btn-lg btn-primary" href="cadastro.html" style="border-radius: 15px;">Cadastrar-se</a></p>
+                  </div>                                
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+      function loginUsuario(event) {
+        event.preventDefault();
+        const email = document.getElementById("typeEmailX-2").value;
+        const tipoUsuario = localStorage.getItem(email + "_tipo") || "cliente"; // usar cadastro prévio
+        if (tipoUsuario === "vendedor") {
+          window.location.href = "painel-vendedor.html";
+        } else {
+          window.location.href = "cliente.html";
+        }
+      }
+    </script>
+    
+  </body>
 </html>
+
+
+
+
+
+
+
+
+
