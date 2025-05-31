@@ -1,7 +1,10 @@
-<!doctype html>
-<html lang="pt-br">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <!-- Definindo a codificação de caracteres para UTF-8 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biografia</title>
+     <!-- Definindo a codificação de caracteres para UTF-8 -->
     <meta charset="utf-8">
     <!-- Configurando a visualização para dispositivos móveis -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,7 +12,6 @@
     
     <!-- Link para o CSS do Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <!-- Link para CSS-->
      <link rel="stylesheet" href="style.css">
     <!-- Barra de navegação -->
@@ -66,7 +68,7 @@
                 </ul>
 
                 <!--botao para apagina de favoritos-->
-                <a class="favorito" href="Favaoritos.html"> Favoritos </a>
+                <a class="favorito" href="Favaoritos.html"> Favaoritos </a>
                 
                 <!-- Formulário de busca -->
                 <form class="d-flex" role="search" >
@@ -86,70 +88,16 @@
               </svg>
               <a href="login.html" class="btn btn-blue ms-2">Cadastro</a>
             </button>
-
-            <a href="cliente.html" class="btn btn-blue ms-2 d-flex align-items-center gap-1">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                <path d="M11 10a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0 0 14A7 7 0 0 0 8 1z"/>
-              </svg>
-              <span>Cliente</span>
-            </a>
             </div>
         </div>
     </nav>
 </head>
 <body>
-  <!--Carrosel de Imagens-->
-  <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="carrosel1.jpg" class="d-block w-100" alt="Descrição da Imagem 1">
-            <div class="container">
-                <div class="carousel-caption text-start">
-                    <h1>ReLivro</h1>
-                    <p class="opacity-65">Conectando histórias, renovando conhecimento</p>
-                    <p><a class="btn btn-lg btn-primary" href="cadastro.html">Cadastre-se</a></p>
-                </div>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <img src="carrosel2.jpg" class="d-block w-100" alt="Descrição da Imagem 2">
-            <div class="container">
-                <div class="carousel-caption">
-                    <h1>Conectando leitores a novas e antigas páginas todos os dias.</h1>
-                    <p><a class="btn btn-lg btn-primary" href="cadastro.html">Cadastre-se</a></p>
-                </div>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <img src="carrosel3.jpg" class="d-block w-100" alt="Descrição da Imagem 3">
-            <div class="container">
-                <div class="carousel-caption text-end">
-                    <h1>Novos, seminovos e inesquecíveis</h1>
-                    <p class="opacity-65">Um livro não precisa ser novo para mudar sua vida.</p>
-                    <p><a class="btn btn-lg btn-primary" href="cadastro.html">Saber Mais</a></p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button>
-</div>
+    <body>
  <!--Mais Vendidos-->
  <section style="background-color: #eee;">
     <div class="text-center container py-5">
-      <h4 class="mt-4 mb-5"><strong>Mais Vendidos</strong></h4>
+      <h4 class="mt-4 mb-5"><strong>Biografia</strong></h4>
       <section style="background-color: #eee;">
 
         <section class="produtos mt-5">
@@ -158,42 +106,42 @@
                 <!-- Produto 1 -->
                 <div class="col-md-4 mb-4">
                     <div class="img-overlay-container" onclick="mostrarCard('detalhe1')">
-                      <img src="aempregada.jpg" class="w-100"  />
+                      <img src="biografia1.jpg" class="w-100"  />
                       <div class="img-overlay">Ver mais</div>
                     </div>
                   </div>
                 <!-- Produto 2 -->
                 <div class="col-md-6 col-lg-4 mb-4">
                     <div class="img-overlay-container" onclick="mostrarCard('detalhe2')">
-                        <img src="lugarfeliz.jpg" class="w-100" />
+                        <img src="biografia2.jpg" class="w-100" />
                         <div class="img-overlay">Ver mais</div>
                       </div>
                 </div>
                  <!-- Produto 3 -->
                  <div class="col-md-6 col-lg-4 mb-4">
                     <div class="img-overlay-container" onclick="mostrarCard('detalhe3')">
-                        <img src="cortedenevoaefuria.jpg" class="w-100" />
+                        <img src="biografia3.jpg" class="w-100" />
                         <div class="img-overlay">Ver mais</div>
                       </div>
                   </div>
                    <!-- Produto 4 -->
                 <div class="col-md-6 col-lg-4 mb-4">
                     <div class="img-overlay-container" onclick="mostrarCard('detalhe4')">
-                        <img src="verity.jpg" class="w-100" />
+                        <img src="biografia4.jpeg" class="w-100" />
                         <div class="img-overlay">Ver mais</div>
                       </div>
                   </div>
                    <!-- Produto 5 -->
                 <div class="col-md-6 col-lg-4 mb-4">
                     <div class="img-overlay-container" onclick="mostrarCard('detalhe5')">
-                        <img src="jantarsecreto.jpg" class="w-100" />
+                        <img src="biografia5.jpg" class="w-100" />
                         <div class="img-overlay">Ver mais</div>
                       </div>
                   </div>
                    <!-- Produto 6 -->
                 <div class="col-md-6 col-lg-4 mb-4">
                     <div class="img-overlay-container" onclick="mostrarCard('detalhe6')">
-                        <img src="ahipotesedoamor.jpg" class="w-100" />
+                        <img src="biografia6.jpeg" class="w-100" />
                         <div class="img-overlay">Ver mais</div>
                       </div>
                   </div>
@@ -208,46 +156,37 @@
                 <div class="row g-0">
                   
                   <div class="col-md-5">
-                    <img id="img-detalhada" src="aempregada.jpg"
+                    <img id="img-detalhada" src="biografia1.jpg"
                       class="img-fluid rounded-start w-100 h-100" alt="Produto" style="object-fit: cover;" />
                   </div>
         
                   <div class="col-md-7">
                     <div class="card-body d-flex flex-column h-100 justify-content-between">
                       <div>
-                        <h5 class="card-title titulo-produto">A Empregada (A empregada – Livro 1): Bem-vinda à família</h5>
-                        <p class="text-muted small descricao-produto">Por Freida McFadden (Autor), Roberta Clapp (Tradutor)<br><br>
-                            Todos os dias, Millie limpa a casa de Nina e Andrew Winchester de cima a baixo.
-                            Pega a filha deles na escola. Prepara refeições deliciosas para a família toda 
-                        antes de poder se recolher e enfim comer o próprio jantar,sozinha em seu quarto minúsculo 
-                        e claustrofóbico no sótão.
-                            Quando Nina passa a sujar todos os cômodos de propósito só para assisti-la limpar, 
-                        Millie tenta não perder a cabeça. Quando ela conta mentiras perturbadoras sobre a 
-                        própria filha e tortura psicologicamente o marido, que parece mais e mais fragilizado, 
-                        Millie tenta ignorar.
-                            Afinal, com seu passado problemático, ela tem mais é que agradecer por ter 
-                        conseguido esse emprego.
-                            No entanto, ao olhar bem dentro dos lindos e doces olhos de Andrew e ver o 
-                        sofrimento contido neles, Millie não consegue deixar de imaginar como seria ter a vida de Nina. 
-                        O closet cheio de roupas, o carro elegante, o marido perfeito.
-                           Logo os Winchesters vão descobrir que não fazem a menor ideia de quem Millie é de verdade. 
-                           Nem do que ela é capaz de fazer...</p>
-                        <p class="card-text text-dark fw-bold fs-5 preco-produto">R$ 44.90</p>
+                        <h5 class="card-title titulo-produto">Pioneiros da Gestalt-terapia no Brasil: Histórias e memórias </h5>
+                        <p class="text-muted small descricao-produto">Por Celana Cardoso Andrade (Compilador)<br><br>
+                           Este livro reúne histórias dos pioneiros da Gestalt-terapia no Brasil. Organizado por Celana 
+                           Cardoso Andrade, ele capta a essência de uma abordagem que valoriza o contato autêntico e a 
+                           totalidade humana, congregando as vozes que moldaram a teoria e a prática gestáltica e a adaptaram 
+                           ao contexto cultural, social e político brasileiro. Tratando de temas como superação, liberdade, 
+                           autenticidade, transformação e produção acadêmica ― além de questões de classe, raça e gênero ―, a 
+                           obra convida o leitor a mergulhar nas vivências desses terapeutas que dedicaram a vida ao 
+                           desenvolvimento da Gestalt-terapia em nosso país. Trata-se de um convite inspirador para todos os 
+                           que desejam compreender e preservar o legado dessa abordagem. Textos de: Abel Guedes, Alexandra 
+                           Tsallis, Ari Rehfeld, Celana Cardoso Andrade, Fádua Helou, Jorge Ponciano Ribeiro, Lilian Meyer 
+                           Frazão, Maria Alice Queiroz de Brito, Maria Cristina Frascaroli (Tsallis), Myrian Bove Fernandes, 
+                           Mônica Botelho Alvim, Ronaldo Miranda, Selma Ciornai e Teresinha Mello da Silveira.</p>
+                        <p class="card-text text-dark fw-bold fs-5 preco-produto">R$ 70.00</p>
                       </div>
                       <div class="d-flex justify-content-between align-items-center">
                         <a href="#!" class="text-dark fw-bold" onclick="fecharCards()">Fechar</a>
-                        <button class="btn-favorito" id="heart-19" onclick="toggleFavorito(19, 'A Empregada', 44.90, 'aempregada.jpg')">
+                        <button class="btn-favorito" id="heart-37" onclick="toggleFavorito(37, 'Pioneiros da Gestalt-terapia no Brasil', 70.00, 'biografia1.jpg')">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="heart-icon">
                       <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
                     </svg>
                   </button>
                         <button class="btn btn-primary" onclick="adicionarCarrinho(this)">Adicionar ao carrinho</button>
-                        <div class="mt-3">
-                        <span>Compartilhar:</span>
-                        <a href="#" class="btn btn-sm btn-outline-primary" onclick="compartilharLivro('facebook', this)">Facebook</a>
-                        <a href="#" class="btn btn-sm btn-outline-success" onclick="compartilharLivro('whatsapp', this)">WhatsApp</a>
-                        <a href="#" class="btn btn-sm btn-outline-info" onclick="compartilharLivro('twitter', this)">Twitter</a>
-                      </div>
+
                       </div>
                     </div>
                   </div>
@@ -263,46 +202,35 @@
                 <div class="row g-0">
                   
                   <div class="col-md-5">
-                    <img id="img-detalhada" src="lugarfeliz.jpg"
+                    <img id="img-detalhada" src="biografia2.jpg"
                       class="img-fluid rounded-start w-100 h-100" alt="Produto" style="object-fit: cover;" />
                   </div>
         
                   <div class="col-md-7">
                     <div class="card-body d-flex flex-column h-100 justify-content-between">
                       <div>
-                        <h5 class="card-title titulo-produto">Lugar Feliz</h5>
-                        <p class= "text-muted small descricao-produto">Por Emily Henry (Autor), Ana Rodrigues (Tradutor)<br><br>
-                            Harriet e Wyn são o casal dos sonhos desde a faculdade ― eles sempre foram perfeitos juntos, 
-                        como sal e pimenta, mel e chá, queijo e goia­bada. Só que agora ― por razões sobre as quais não conversam ― eles não combinam mais.
-                            Faz cinco meses que Harriet e Wyn terminaram, e ainda não contaram aos seus melhores amigos.
-                            Assim, continuam dividindo o maior quarto da casa no Maine onde sua turma de amigos passa 
-                        férias há uma década. Todo ano, por uma semana vibrante e colorida, eles dão uma pausa na rotina e vão beber vinho, 
-                        se empanturrar de queijo e frutos do mar e curtir a praia com as suas pessoas favoritas.
-                           Só que este ano Harriet e Wyn estão mentindo na cara dura enquanto 
-                        tentam disfarçar que ainda se querem desesperadamente. 
-                        Porque a casa no Maine está à venda, e esta é a última semana que os amigos terão para ficar juntos no paraíso. 
-                           Harriet e Wyn não querem estra­gar as férias, então fingem que está tudo bem. 
-                        Ela vai continuar sendo a médica-residente motivada que jamais começa uma briga, e ele, 
-                        o cara charmoso e descontraído que nunca deixa transparecer os problemas.
-                           É um plano infalível ― se você olhar bem de lon­ge e com óculos de sol com manchas de 
-                        protetor solar nas lentes. Depois de anos apaixonados, não deve ser tão difícil fingir por 
-                        apenas uma semana, na frente das pessoas que conhecem os dois como ninguém… certo?</p>
-                        <p class= "card-text text-dark fw-bold fs-5 preco-produto">R$ 39.90</p>
+                        <h5 class="card-title titulo-produto">As 999 primeiras mulheres de Auschwitz  </h5>
+                        <p class= "text-muted small descricao-produto">Por Heather Dune Macadam (Autor), Aline Uchida (Tradutor) <br><br>
+                          Em 25 de março de 1942, quase mil mulheres jovens, solteiras e de origem judaica embarcaram 
+                          em um trem para Poprad, na Eslováquia. Repletas de um sentimento de aventura e orgulho nacional,
+                           elas deixaram as casas de seus pais trajando suas melhores roupas e disseram “adeus”, repletas 
+                           de confiança. Ao acreditarem que iriam trabalhar em uma fábrica por alguns meses, elas estavam 
+                           ávidas por comparecer a serviço do governo. Em vez disso, essas jovens mulheres — muitas delas, 
+                           adolescentes — foram enviadas a Auschwitz.
+                        A aclamada autora Heather Dune Macadam revela suas histórias comoventes, recorrendo a extensas entrevistas 
+                        com sobreviventes e consultando historiadores, testemunhas e parentes dessas primeiras deportadas, 
+                        para ampliar a literatura do Holocausto e a história das mulheres de forma marcante.</p>
+                        <p class= "card-text text-dark fw-bold fs-5 preco-produto">R$ 53.83</p>
                       </div>
                       <div class="d-flex justify-content-between align-items-center">
                         <a href="#!" class="text-dark fw-bold" onclick="fecharCards()">Fechar</a>
-                         <button class="btn-favorito" id="heart-20" onclick="toggleFavorito(20, 'Lugar Feliz', 39.90, 'lugarfeliz.jpg')">
+                        <button class="btn-favorito" id="heart-38" onclick="toggleFavorito(38, 'As 999 primeiras mulheres de Auschwitz', 53.83, 'biografia2.jpg')">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="heart-icon">
                       <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
                     </svg>
                   </button>
                         <button class="btn btn-primary" onclick="adicionarCarrinho(this)">Adicionar ao carrinho</button>
-                        <div class="mt-3">
-                          <span>Compartilhar:</span>
-                          <a href="#" class="btn btn-sm btn-outline-primary" onclick="compartilharLivro('facebook', this)">Facebook</a>
-                          <a href="#" class="btn btn-sm btn-outline-success" onclick="compartilharLivro('whatsapp', this)">WhatsApp</a>
-                          <a href="#" class="btn btn-sm btn-outline-info" onclick="compartilharLivro('twitter', this)">Twitter</a>
-                        </div>
+
                       </div>
                     </div>
                   </div>
@@ -318,44 +246,37 @@
                 <div class="row g-0">
                   
                   <div class="col-md-5">
-                    <img id="img-detalhada" src="cortedenevoaefuria.jpg"
+                    <img id="img-detalhada" src="biografia3.jpg"
                       class="img-fluid rounded-start w-100 h-100" alt="Produto" style="object-fit: cover;" />
                   </div>
         
                   <div class="col-md-7">
                     <div class="card-body d-flex flex-column h-100 justify-content-between">
                       <div>
-                        <h5 class= "card-title titulo-produto" >Corte de névoa e fúria (Vol. 2 Corte de espinhos e rosas)</h5>
-                        <p class= "text-muted small descricao-produto">Por Sarah J. Maas (Autor), Mariana Kohnert (Tradutor)<br><br>
-                            Neste livro, seguimos a saga de Feyre Archeron, que morreu Sob a Montanha. Nas garras de Amarantha, 
-                        a jovem humana que ansiava por amor e proteção deixou de existir. Das cinzas de seu velho eu, 
-                        Feyre Quebradora da Maldição foi Feita - com poderes de sete Grão-Feéricos... e uma vontade tão férrea 
-                        quanto o metal temido por eles.
-                            Seu coração no entanto, permanece humano, vulnerável. Incapaz de esquecer o que sofreu para 
-                        libertar o povo de Tamlin... e o pacto firmado com Rhysand, senhor da Corte Noturna. 
-                        Mas mesmo assim, Feyre se esforça para reconstruir o lar que criou na Corte Primaveril.
-                        Então por que é ao lado de Rhys que ela se sente mais plena?
-                            Peça-chave num jogo que desconhece. Feyre deve aprender rapidamente do que á capaz. 
-                        E curar sua alma partida. Pois um antigo mal, muito pior que Amarantha, se agita no horizonte... 
-                        um que ameaça não apenas os feéricos, mas o mundo humano e a muralha também.
-                            Enquanto navega por uma teia de intrigas políticas, paixões e poder, sufocada por Tamlin, 
-                        Feyre precisa decidir o que deseja: amor ou liberdade?</p>
-                        <p class= "card-text text-dark fw-bold fs-5 preco-produto">R$ 57.94</p>
+                        <h5 class= "card-title titulo-produto">Kierkegaard: Uma vida extraordinária </h5>
+                        <p class= "text-muted small descricao-produto">Por Nírio de Jesus Moraes (Tradutor), Stephen Backhouse (Autor)<br><br>
+                        Razão e sensibilidade É impossível falar da Filosofia moderna sem lembrar de seus representantes 
+                        mais ilustres, como Nietzsche, Schopenhauer, Heidegger, Kant, Sartre, Spinoza, Witgenstein, 
+                        Descartes e Hegel, entre outros. Ao lado deles, igualmente respeitado como grande luminar do 
+                        pensamento ocidental, figura Søren Kierkgaard. Acadêmico, poeta, dono de um senso crítico aguçado,
+                         ele se notabilizou não apenas por suas articulações teóricas brilhantes, que lhe valeram o 
+                         epíteto de primeiro filósofo existencialista, mas também pela maneira como desenvolveu um sólido 
+                         arcabouço ético e filosófico da fé cristã. Em Kierkgaard – Uma vida extraordinária, o estudioso 
+                         Stephen Backhouse passa em revista a vida pessoal e a trajetória dialética de um homem que 
+                         reuniu razão e religiosidade, influenciando em grande medida o pensamento de sua época e dos 
+                         séculos seguintes. O autor revela como racionalidade e sensibilidade conviviam na vida acadêmica,
+                          na poesia, na teologia, nos amores e humores do intelectual dinamarquês.</p>
+                        <p class= "card-text text-dark fw-bold fs-5 preco-produto">R$ 37.42</p>
                       </div>
                       <div class="d-flex justify-content-between align-items-center">
                         <a href="#!" class="text-dark fw-bold" onclick="fecharCards()">Fechar</a>
-                        <button class="btn-favorito" id="heart-21" onclick="toggleFavorito(21, 'Corte de névoa e fúria', 57.94, 'cortedenevoaefuria.jpg')">
+                        <button class="btn-favorito" id="heart-39" onclick="toggleFavorito(39, 'Kierkegaard: Uma vida extraordinária', 37.42, 'biografia3.jpg')">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="heart-icon">
                       <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
                     </svg>
                   </button>
                         <button class="btn btn-primary" onclick="adicionarCarrinho(this)">Adicionar ao carrinho</button>
-                            <div class="mt-3">
-                              <span>Compartilhar:</span>
-                              <a href="#" class="btn btn-sm btn-outline-primary" onclick="compartilharLivro('facebook', this)">Facebook</a>
-                              <a href="#" class="btn btn-sm btn-outline-success" onclick="compartilharLivro('whatsapp', this)">WhatsApp</a>
-                              <a href="#" class="btn btn-sm btn-outline-info" onclick="compartilharLivro('twitter', this)">Twitter</a>
-                            </div>
+
                       </div>
                     </div>
                   </div>
@@ -371,46 +292,38 @@
                 <div class="row g-0">
                   
                   <div class="col-md-5">
-                    <img id="img-detalhada" src="verity.jpg"
+                    <img id="img-detalhada" src="biografia4.jpeg"
                       class="img-fluid rounded-start w-100 h-100" alt="Produto" style="object-fit: cover;" />
                   </div>
         
                   <div class="col-md-7">
                     <div class="card-body d-flex flex-column h-100 justify-content-between">
                       <div>
-                        <h5 class="card-title titulo-produto">Verity</h5>
-                        <p class="text-muted small descricao-produto"> Por Colleen Hoover (Autor), Thaís Britto (Tradutor)<br><br>
-                            Verity Crawford é a autora best-seller por trás de uma série de sucesso. Ela está no auge de sua carreira, 
-                        aclamada pela crítica e pelo público, no entanto, um súbito e terrível acidente acaba interrompendo 
-                        suas atividades, deixando-a sem condições de concluir a história... E é nessa complexa circunstância que 
-                        surge Lowen Ashleigh, uma escritora à beira da falência convidada a escrever, sob um pseudônimo, os três 
-                        livros restantes da já consolidada série.
-                            Para que consiga entender melhor o processo criativo de Verity com relação aos livros publicados e, 
-                        ainda, tentar descobrir seus possíveis planos para os próximos, Lowen decide passar alguns dias na casa 
-                        dos Crawford, imersa no caótico escritório de Verity - e, lá, encontra uma espécie de autobiografia onde a 
-                        escritora narra os fatos acontecidos desde o dia em que conhece Jeremy, seu marido, até os instantes 
-                        imediatamente anteriores a seu acidente - incluindo sua perspectiva sobre as tragédias ocorridas às filhas do 
-                        casal.
-                            Quanto mais o tempo passa, mais Lowen se percebe envolvida em uma confusa rede de mentiras e segredos,
-                         e, lentamente, adquire sua própria posição no jogo psicológico que rodeia aquela casa. Emocional e 
-                        fisicamente atraída por Jeremy, ela precisa decidir: expor uma versão que nem ele conhece sobre a própria 
-                        esposa ou manter o sigilo dos escritos de Verity?</p>
-                        <p class="card-text text-dark fw-bold fs-5 preco-produto">R$ 57.94</p>
+                        <h5 class="card-title titulo-produto">Beyond The Story: Uma história dos 10 anos de BTS  </h5>
+                        <p class="text-muted small descricao-produto"> Por Myeongseok Kang (Autor), BTS (Autor), Luara França (Tradutor)<br><br>
+                         Após terem se apresentado ao mundo pela primeira vez em 13 de junho de 2013, o BTS celebra 10 
+                         anos de aniversário do seu debut em 2023. Eles alcançaram o auge como artistas globais e icônicos
+                        e, neste momento significativo, o grupo reflete sobre toda a trajetória percorrida neste primeiro 
+                        livro oficial. Ao fazer isso, o BTS promove a possibilidade de construir dias melhores, fazendo a 
+                        escolha de dar mais um passo em uma estrada que ninguém jamais percorreu.
+                        BTS compartilha histórias pessoais e dos bastidores da sua jornada até aqui por meio de 
+                        entrevistas e mais de três anos de pesquisa e acompanhamento da banda feitos por Myeongseok Kang, 
+                        que já escreveu para diversas plataformas de mídia sobre K-pop e cultura coreana. Apresentado
+                         cronologicamente em sete capítulos, o livro abrange o perído desde antes do debut do BTS até o presente, 
+                         e suas impactantes vozes e opiniões se combinam para contar uma história honesta, empolgante e profunda. 
+                         Em entrevistas individuais que foram conduzidas sem câmeras ou maquiagem, eles trazem à luz sua 
+                         jornada musical por diversos ângulos, discutindo seu impacto.</p>
+                        <p class="card-text text-dark fw-bold fs-5 preco-produto">R$ 135.90</p>
                       </div>
                       <div class="d-flex justify-content-between align-items-center">
                         <a href="#!" class="text-dark fw-bold" onclick="fecharCards()">Fechar</a>
-                        <button class="btn-favorito" id="heart-22" onclick="toggleFavorito(22, 'Verity', 57.94, 'verity.jpg')">
+                        <button class="btn-favorito" id="heart-40" onclick="toggleFavorito(40, 'Beyond The Story: Uma história dos 10 anos de BTS', 135.90, 'biografia4.jpeg')">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="heart-icon">
                       <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
                     </svg>
                   </button>
                         <button class="btn btn-primary" onclick="adicionarCarrinho(this)">Adicionar ao carrinho</button>
-                            <div class="mt-3">
-                              <span>Compartilhar:</span>
-                              <a href="#" class="btn btn-sm btn-outline-primary" onclick="compartilharLivro('facebook', this)">Facebook</a>
-                              <a href="#" class="btn btn-sm btn-outline-success" onclick="compartilharLivro('whatsapp', this)">WhatsApp</a>
-                              <a href="#" class="btn btn-sm btn-outline-info" onclick="compartilharLivro('twitter', this)">Twitter</a>
-                            </div>
+
                       </div>
                     </div>
                   </div>
@@ -426,39 +339,40 @@
                 <div class="row g-0">
                   
                   <div class="col-md-5">
-                    <img id="img-detalhada" src="jantarsecreto.jpg"
+                    <img id="img-detalhada" src="biografia5.jpg"
                       class="img-fluid rounded-start w-100 h-100" alt="Produto" style="object-fit: cover;" />
                   </div>
         
                   <div class="col-md-7">
                     <div class="card-body d-flex flex-column h-100 justify-content-between">
                       <div>
-                        <h5 class="card-title titulo-produto">Jantar Secreto</h5>
-                        <p class="text-muted small descricao-produto"> Por Raphael Montes (Autor)<br><br>
-                            Um grupo de jovens deixa uma pequena cidade no Paraná para viver no Rio de Janeiro. Eles alugam um 
-                        apartamento em Copacabana e fazem o possível para pagar a faculdade e manter vivos seus sonhos de 
-                        sucesso na capital fluminense. Mas o dinheiro está curto e o aluguel está vencido. Para sair do buraco e 
-                        manter o apartamento, os amigos adotam uma estratégia heterodoxa: arrecadar fundos por meio de jantares 
-                        secretos, divulgados pela internet para uma clientela exclusiva da elite carioca.
-                            A partir daí, eles se envolvem em uma espiral de crimes, descobrem uma rede de contrabando de corpos, 
-                        matadouros clandestinos e grã-finos excêntricos, e levam ao limite uma índole perversa que jamais imaginaram 
-                        existir em cada um deles.</p>
-                        <p class="card-text text-dark fw-bold fs-5 preco-produto">R$ 43.56</p>
+                        <h5 class="card-title titulo-produto">Leonardo da Vinci </h5>
+                        <p class="text-muted small descricao-produto"> Por Walter Isaacson (Autor), André Czarnobai (Tradutor)<br><br>
+                         A biografia definitiva do mestre Leonardo da Vinci, assinada pelo autor dos best-sellers Steve Jobs: 
+                         A biografia e Einstein: sua vida, seu universo
+                        Com base em milhares de páginas dos impressionantes cadernos que Leonardo manteve ao longo de boa 
+                        parte da vida e nas mais recentes descobertas sobre sua obra e sua trajetória, Walter Isaacson, biógrafo 
+                        de Einstein e Steve Jobs, tece uma narrativa que conecta arte e ciência, revelando faces inéditas da 
+                        história de Leonardo. Desfazendo-se da aura de super-humano muitas vezes atribuída ao artista, Isaacson 
+                        mostra que a genialidade de Leonardo estava fundamentada em características bastante palpáveis, como a 
+                        curiosidade, uma enorme capacidade de observação e uma imaginação tão fértil que flertava com a fantasia.
+                        Leonardo criou duas das mais famosas obras de arte de todos os tempos, A Última Ceia e Mona Lisa, mas 
+                        se considerava apenas um homem da ciência e da tecnologia ― curiosamente, uma de suas maiores ambições era 
+                        ser reconhecido como engenheiro militar. Com uma paixão que às vezes se tornava obsessiva, ele elaborou 
+                        estudos inovadores de anatomia, fósseis, o voo dos pássaros, o coração, máquinas voadoras, botânica, 
+                        geologia, hidráulica, armamentos e fortificações. A habilidade para entrelaçar humanidades e ciência, 
+                        tornada icônica com o desenho do Homem vitruviano, fez dele o gênio mais criativo da história.</p>
+                        <p class="card-text text-dark fw-bold fs-5 preco-produto">R$ 109.47</p>
                       </div>
                       <div class="d-flex justify-content-between align-items-center">
                         <a href="#!" class="text-dark fw-bold" onclick="fecharCards()">Fechar</a>
-                         <button class="btn-favorito" id="heart-23" onclick="toggleFavorito(23, 'Jantar Secreto', 43.56, 'jantarsecreto.jpg')">
+                        <button class="btn-favorito" id="heart-41" onclick="toggleFavorito(41, 'Leonardo da Vinci', 109.47, 'biografia5.jpg')">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="heart-icon">
                       <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
                     </svg>
                   </button>
                         <button class="btn btn-primary" onclick="adicionarCarrinho(this)">Adicionar ao carrinho</button>
-                          <div class="mt-3">
-                            <span>Compartilhar:</span>
-                            <a href="#" class="btn btn-sm btn-outline-primary" onclick="compartilharLivro('facebook', this)">Facebook</a>
-                            <a href="#" class="btn btn-sm btn-outline-success" onclick="compartilharLivro('whatsapp', this)">WhatsApp</a>
-                            <a href="#" class="btn btn-sm btn-outline-info" onclick="compartilharLivro('twitter', this)">Twitter</a>
-                          </div>
+
                       </div>
                     </div>
                   </div>
@@ -474,43 +388,34 @@
                 <div class="row g-0">
                   
                   <div class="col-md-5">
-                    <img id="img-detalhada" src="ahipotesedoamor.jpg"
+                    <img id="img-detalhada" src="biografia6.jpeg"
                       class="img-fluid rounded-start w-100 h-100" alt="Produto" style="object-fit: cover;" />
                   </div>
         
                   <div class="col-md-7">
                     <div class="card-body d-flex flex-column h-100 justify-content-between">
                       <div>
-                        <h5 class="card-title titulo-produto">A Hipótese do Amor</h5>
-                        <p class="text-muted small descricao-produto"> Por Ali Hazelwood (Autor), Thaís Britto (Tradutor)<br><br>
-                            Olive Smith, aluna do doutorado em Biologia da Universidade Stanford, acredita na ciência – não em algo 
-                        incontrolável como o amor.
-                            Depois de sair algumas vezes com Jeremy, ela percebe que sua melhor amiga gosta dele e decide juntá-los. 
-                        Para mostrar que está feliz com essa escolha, Olive precisa ser convincente: afinal, cientistas exigem provas. 
-                            Sem muitas opções, ela resolve inventar um namoro de mentira e, num momento de pânico, beija o primeiro 
-                        homem que vê pela frente.
-                            O problema é que esse homem é Adam Carlsen, um jovem professor de prestígio – conhecido por levar os alunos 
-                        às lágrimas. Por isso, Olive fica chocada quando o tirano dos laboratórios concorda em levar adiante a farsa 
-                        e fingir ser seu namorado. 
-                            De repente, seu pequeno experimento parece perigosamente próximo da combustão e aquela pequena 
-                        possibilidade científica, que era apenas uma hipótese sobre o amor, 
-                        transforma-se em algo totalmente inesperado.</p>
-                        <p class="card-text text-dark fw-bold fs-5 preco-produto">R$ 45.06</p>
+                        <h5 class="card-title titulo-produto">As primeiras quatro estações: vivendo a maternidade </h5>
+                        <p class="text-muted small descricao-produto"> Por Fernanda Witwytzky (Autor)<br><br>
+                         Que a maternidade não é nada fácil, todos estamos cansados de saber. 
+                         Para uma mãe de primeira viagem então...   
+                        A chuva de informações e dicas encontradas em livros, blogs e até mesmo nos conselhos de outras mães 
+                        pode ser assustadora. A autora deste livro, Fernanda Witwitsky , passou por tudo isso durante sua primeira 
+                        gravidez, na qual descobriu que esperava não apenas um, mas dois bebês de uma vez só.  
+                        Neste livro, Fernanda relata como ela sentiu e viveu o primeiro ano de vida de seus filhos, 
+                        compartilha suas angústias e estratégias e mostra como foi sua relação com Deus durante todo esse período – as 
+                        mudanças e novas responsabilidades e os momentos mais difíceis e cansativos. </p>
+                        <p class="card-text text-dark fw-bold fs-5 preco-produto">R$ 36.68</p>
                       </div>
                       <div class="d-flex justify-content-between align-items-center">
                         <a href="#!" class="text-dark fw-bold" onclick="fecharCards()">Fechar</a>
-                        <button class="btn-favorito" id="heart-24" onclick="toggleFavorito(24, 'A Hipótese do Amor', 45.06, 'ahipotesedoamor.jpg')">
+                        <button class="btn-favorito" id="heart-42" onclick="toggleFavorito(42, 'As primeiras quatro estações: vivendo a maternidade', 36.68, 'biografia6.jpeg')">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="heart-icon">
                       <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
                     </svg>
                   </button>
                         <button class="btn btn-primary" onclick="adicionarCarrinho(this)">Adicionar ao carrinho</button>
-                        <div class="mt-3">
-                          <span>Compartilhar:</span>
-                          <a href="#" class="btn btn-sm btn-outline-primary" onclick="compartilharLivro('facebook', this)">Facebook</a>
-                          <a href="#" class="btn btn-sm btn-outline-success" onclick="compartilharLivro('whatsapp', this)">WhatsApp</a>
-                          <a href="#" class="btn btn-sm btn-outline-info" onclick="compartilharLivro('twitter', this)">Twitter</a>
-                        </div>
+
                       </div>
                     </div>
                   </div>
@@ -548,29 +453,6 @@
     <div id="resultado" class="mt-4 text-center"></div>
   </div>
 </div>
-
-<!-- Botão flutuante do Chatbot -->
-<button id="botao-chat" class="btn btn-primary rounded-circle position-fixed bottom-0 end-0 m-4 shadow" onclick="toggleChat()">
-  💬
-</button>
-
-<!-- Janela do chatbot -->
-<div id="chatbot" class="card position-fixed bottom-0 end-0 m-4 shadow-lg" style="width: 320px; display: none; z-index: 1050;">
-  <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center">
-    <span>📚 Assistente ReLivro</span>
-    <button type="button" class="btn-close btn-close-white btn-sm" aria-label="Fechar" onclick="toggleChat()"></button>
-  </div>
-  <div class="card-body overflow-auto" id="chat-mensagens" style="height: 250px; font-size: 0.9rem;"></div>
-  <div class="card-footer">
-    <input type="text" id="chat-input" class="form-control" placeholder="Digite sua pergunta..." onkeypress="if(event.key === 'Enter') enviarMensagem()">
-  </div>
-</div>
-
-<!-- Botão flutuante de WhatsApp -->
-<a href="https://wa.me/5511912345678" target="_blank" class="btn btn-success position-fixed bottom-0 end-0 me-5 mb-5 rounded-circle shadow" style="width: 56px; height: 56px; font-size: 1.5rem;">
-  <i class="bi bi-whatsapp"></i>
-</a>
-
       
 <script>
   document.getElementById("avaliacaoForm").addEventListener("submit", function (e) {
@@ -591,73 +473,6 @@
     const resultado = document.getElementById("resultado");
     resultado.innerHTML = `<p class="text-success">Avaliação enviada com sucesso!<br>Nota: ${nota} estrelas<br>Comentário: ${comentario}</p>`;
   });
-
-  function compartilharLivro(rede, botao) {
-    const card = botao.closest('.card-detalhado');
-    const titulo = card.querySelector('.titulo-produto').innerText;
-    const descricao = card.querySelector('.descricao-produto').innerText.substring(0, 150) + '...';
-    const url = window.location.href;
-
-    let link = '';
-    switch (rede) {
-      case 'facebook':
-        link = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}&quote=${encodeURIComponent(titulo)}`;
-        break;
-      case 'whatsapp':
-        link = `https://api.whatsapp.com/send?text=${encodeURIComponent(titulo + '\n' + url)}`;
-        break;
-      case 'twitter':
-        link = `https://twitter.com/intent/tweet?text=${encodeURIComponent(titulo)}&url=${encodeURIComponent(url)}`;
-        break;
-      case 'email':
-        link = `mailto:?subject=${encodeURIComponent(titulo)}&body=${encodeURIComponent(descricao + '\n\nLink: ' + url)}`;
-        break;
-    }
-
-    window.open(link, '_blank');
-  }
-
-  function toggleChat() {
-    const chat = document.getElementById("chatbot");
-    chat.style.display = (chat.style.display === "none" || chat.style.display === "") ? "flex" : "none";
-  }
-
-  function enviarMensagem() {
-    const input = document.getElementById("chat-input");
-    const texto = input.value.trim();
-    if (!texto) return;
-
-    adicionarMensagem("Você", texto, "text-end text-primary");
-    input.value = "";
-    setTimeout(() => responder(texto.toLowerCase()), 600);
-  }
-
-  function adicionarMensagem(remetente, texto, classe = "") {
-    const corpo = document.getElementById("chat-mensagens");
-    const msg = document.createElement("div");
-    msg.className = `mb-2 ${classe}`;
-    msg.innerHTML = `<strong>${remetente}:</strong> <div>${texto}</div>`;
-    corpo.appendChild(msg);
-    corpo.scrollTop = corpo.scrollHeight;
-  }
-
-  function responder(pergunta) {
-    let resposta = "Desculpe, não entendi. Pode reformular sua pergunta?";
-
-    if (pergunta.includes("livro") || pergunta.includes("busco")) {
-      resposta = "Você pode procurar livros na aba 'Livros' ou usar a busca no topo da página.";
-    } else if (pergunta.includes("frete")) {
-      resposta = "O frete é calculado automaticamente no carrinho ao informar seu CEP.";
-    } else if (pergunta.includes("pagamento") || pergunta.includes("pix")) {
-      resposta = "Aceitamos Pix, cartão de crédito e boleto bancário.";
-    } else if (pergunta.includes("contato") || pergunta.includes("falar")) {
-      resposta = "Você pode nos contatar pelo WhatsApp: <a href='https://wa.me/5511912345678' target='_blank' class='text-decoration-underline'>clique aqui</a>.";
-    } else if (pergunta.includes("ebook") || pergunta.includes("digital")) {
-      resposta = "Temos ebooks disponíveis na seção 'Ebooks' no menu principal.";
-    }
-
-    adicionarMensagem("ReLivro", resposta, "text-start text-secondary");
-  }
 </script>
                 
     <!--Rodapé-->
@@ -681,7 +496,6 @@
             <li><a class="link-secondary text-decoration-none" href="#">Conteúdo</a></li>
             <li><a class="link-secondary text-decoration-none" href="#">Suporte</a></li>
             <li><a class="link-secondary text-decoration-none" href="#">Comunidade</a></li>
-            <li><a class="link-secondary text-decoration-none" href="blog.html">Blog</a></li>
           </ul>
         </div>
         <div class="col-6 col-md">
@@ -724,7 +538,7 @@
     cards.forEach(card => card.style.display = 'none');
   }
 
-  function adicionarCarrinho(botao) {
+ function adicionarCarrinho(botao) {
   const card = botao.closest('.card-detalhado');
   const nome = card.querySelector('.titulo-produto').innerText;
   const preco = card.querySelector('.preco-produto').innerText.replace("R$", "").trim();
@@ -739,7 +553,7 @@
 
   const carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
 
-  // Verifica se o produto já está no carrinho
+  
   const indexExistente = carrinho.findIndex(p => p.nome === produto.nome);
   if (indexExistente > -1) {
     carrinho[indexExistente].quantidade += 1;
@@ -749,10 +563,11 @@
 
   localStorage.setItem("carrinho", JSON.stringify(carrinho));
 
-  // Mensagem no lugar do alert
+  
   mostrarMensagem(`📚 "${produto.nome}" foi adicionado ao carrinho!`, 'success');
 }
 
+// Gerenciamento de favoritos
 let favoritos = JSON.parse(localStorage.getItem('livrosFavoritos')) || [];
 
 function toggleFavorito(id, titulo, preco, imagem) {
@@ -801,5 +616,6 @@ function mostrarMensagem(texto, tipo) {
 
     </script>
     
+</body>
 </body>
 </html>

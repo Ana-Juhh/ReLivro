@@ -1,7 +1,10 @@
-<!doctype html>
-<html lang="pt-br">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <!-- Definindo a codificação de caracteres para UTF-8 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livros Academicos</title>
+     <!-- Definindo a codificação de caracteres para UTF-8 -->
     <meta charset="utf-8">
     <!-- Configurando a visualização para dispositivos móveis -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,7 +12,6 @@
     
     <!-- Link para o CSS do Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <!-- Link para CSS-->
      <link rel="stylesheet" href="style.css">
     <!-- Barra de navegação -->
@@ -66,7 +68,7 @@
                 </ul>
 
                 <!--botao para apagina de favoritos-->
-                <a class="favorito" href="Favaoritos.html"> Favoritos </a>
+                <a class="favorito" href="Favaoritos.html"> Favaoritos </a>
                 
                 <!-- Formulário de busca -->
                 <form class="d-flex" role="search" >
@@ -86,70 +88,16 @@
               </svg>
               <a href="login.html" class="btn btn-blue ms-2">Cadastro</a>
             </button>
-
-            <a href="cliente.html" class="btn btn-blue ms-2 d-flex align-items-center gap-1">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                <path d="M11 10a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0 0 14A7 7 0 0 0 8 1z"/>
-              </svg>
-              <span>Cliente</span>
-            </a>
             </div>
         </div>
     </nav>
 </head>
 <body>
-  <!--Carrosel de Imagens-->
-  <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="carrosel1.jpg" class="d-block w-100" alt="Descrição da Imagem 1">
-            <div class="container">
-                <div class="carousel-caption text-start">
-                    <h1>ReLivro</h1>
-                    <p class="opacity-65">Conectando histórias, renovando conhecimento</p>
-                    <p><a class="btn btn-lg btn-primary" href="cadastro.html">Cadastre-se</a></p>
-                </div>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <img src="carrosel2.jpg" class="d-block w-100" alt="Descrição da Imagem 2">
-            <div class="container">
-                <div class="carousel-caption">
-                    <h1>Conectando leitores a novas e antigas páginas todos os dias.</h1>
-                    <p><a class="btn btn-lg btn-primary" href="cadastro.html">Cadastre-se</a></p>
-                </div>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <img src="carrosel3.jpg" class="d-block w-100" alt="Descrição da Imagem 3">
-            <div class="container">
-                <div class="carousel-caption text-end">
-                    <h1>Novos, seminovos e inesquecíveis</h1>
-                    <p class="opacity-65">Um livro não precisa ser novo para mudar sua vida.</p>
-                    <p><a class="btn btn-lg btn-primary" href="cadastro.html">Saber Mais</a></p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button>
-</div>
+    <body>
  <!--Mais Vendidos-->
  <section style="background-color: #eee;">
     <div class="text-center container py-5">
-      <h4 class="mt-4 mb-5"><strong>Mais Vendidos</strong></h4>
+      <h4 class="mt-4 mb-5"><strong>Livros Acadêmicos</strong></h4>
       <section style="background-color: #eee;">
 
         <section class="produtos mt-5">
@@ -158,42 +106,42 @@
                 <!-- Produto 1 -->
                 <div class="col-md-4 mb-4">
                     <div class="img-overlay-container" onclick="mostrarCard('detalhe1')">
-                      <img src="aempregada.jpg" class="w-100"  />
+                      <img src="academico1.png" class="w-100"  />
                       <div class="img-overlay">Ver mais</div>
                     </div>
                   </div>
                 <!-- Produto 2 -->
                 <div class="col-md-6 col-lg-4 mb-4">
                     <div class="img-overlay-container" onclick="mostrarCard('detalhe2')">
-                        <img src="lugarfeliz.jpg" class="w-100" />
+                        <img src="academico2.jpg" class="w-100" />
                         <div class="img-overlay">Ver mais</div>
                       </div>
                 </div>
                  <!-- Produto 3 -->
                  <div class="col-md-6 col-lg-4 mb-4">
                     <div class="img-overlay-container" onclick="mostrarCard('detalhe3')">
-                        <img src="cortedenevoaefuria.jpg" class="w-100" />
+                        <img src="academico3.png" class="w-100" />
                         <div class="img-overlay">Ver mais</div>
                       </div>
                   </div>
                    <!-- Produto 4 -->
                 <div class="col-md-6 col-lg-4 mb-4">
                     <div class="img-overlay-container" onclick="mostrarCard('detalhe4')">
-                        <img src="verity.jpg" class="w-100" />
+                        <img src="academico4.jpg" class="w-100" />
                         <div class="img-overlay">Ver mais</div>
                       </div>
                   </div>
                    <!-- Produto 5 -->
                 <div class="col-md-6 col-lg-4 mb-4">
                     <div class="img-overlay-container" onclick="mostrarCard('detalhe5')">
-                        <img src="jantarsecreto.jpg" class="w-100" />
+                        <img src="academico5.png" class="w-100" />
                         <div class="img-overlay">Ver mais</div>
                       </div>
                   </div>
                    <!-- Produto 6 -->
                 <div class="col-md-6 col-lg-4 mb-4">
                     <div class="img-overlay-container" onclick="mostrarCard('detalhe6')">
-                        <img src="ahipotesedoamor.jpg" class="w-100" />
+                        <img src="academico6.jpeg" class="w-100" />
                         <div class="img-overlay">Ver mais</div>
                       </div>
                   </div>
@@ -208,46 +156,33 @@
                 <div class="row g-0">
                   
                   <div class="col-md-5">
-                    <img id="img-detalhada" src="aempregada.jpg"
+                    <img id="img-detalhada" src="academico1.png"
                       class="img-fluid rounded-start w-100 h-100" alt="Produto" style="object-fit: cover;" />
                   </div>
         
                   <div class="col-md-7">
                     <div class="card-body d-flex flex-column h-100 justify-content-between">
                       <div>
-                        <h5 class="card-title titulo-produto">A Empregada (A empregada – Livro 1): Bem-vinda à família</h5>
-                        <p class="text-muted small descricao-produto">Por Freida McFadden (Autor), Roberta Clapp (Tradutor)<br><br>
-                            Todos os dias, Millie limpa a casa de Nina e Andrew Winchester de cima a baixo.
-                            Pega a filha deles na escola. Prepara refeições deliciosas para a família toda 
-                        antes de poder se recolher e enfim comer o próprio jantar,sozinha em seu quarto minúsculo 
-                        e claustrofóbico no sótão.
-                            Quando Nina passa a sujar todos os cômodos de propósito só para assisti-la limpar, 
-                        Millie tenta não perder a cabeça. Quando ela conta mentiras perturbadoras sobre a 
-                        própria filha e tortura psicologicamente o marido, que parece mais e mais fragilizado, 
-                        Millie tenta ignorar.
-                            Afinal, com seu passado problemático, ela tem mais é que agradecer por ter 
-                        conseguido esse emprego.
-                            No entanto, ao olhar bem dentro dos lindos e doces olhos de Andrew e ver o 
-                        sofrimento contido neles, Millie não consegue deixar de imaginar como seria ter a vida de Nina. 
-                        O closet cheio de roupas, o carro elegante, o marido perfeito.
-                           Logo os Winchesters vão descobrir que não fazem a menor ideia de quem Millie é de verdade. 
-                           Nem do que ela é capaz de fazer...</p>
-                        <p class="card-text text-dark fw-bold fs-5 preco-produto">R$ 44.90</p>
+                        <h5 class="card-title titulo-produto">Letramento acadêmico: prática de pesquisa e produção textual na universidade </h5>
+                        <p class="text-muted small descricao-produto">Por Luana Lopes Amaral (Autor), Daniervelin Pereira (Autor)<br><br>
+                           Quem chega na universidade entra em um mundo cheio de novidades e possibilidades, mas como de fato viver 
+                           plenamente essa experiência universitária? Este livro oferece uma introdução à cultura acadêmica, 
+                           especialmente nos cursos de graduação. Como se produz conhecimento científico na universidade? 
+                           E por que meios divulgá-lo? A obra apresenta os gêneros textuais mais usados na academia e mostra como e quando 
+                           colocá-los em prática, expondo suas particularidades e métodos de elaboração. 
+                           Um manual básico, prático e essencial para ingressantes e também para aqueles que já são universitários e 
+                           precisam de ferramentas para melhorar seu desempenho.</p>
+                        <p class="card-text text-dark fw-bold fs-5 preco-produto">R$ 36.58</p>
                       </div>
                       <div class="d-flex justify-content-between align-items-center">
                         <a href="#!" class="text-dark fw-bold" onclick="fecharCards()">Fechar</a>
-                        <button class="btn-favorito" id="heart-19" onclick="toggleFavorito(19, 'A Empregada', 44.90, 'aempregada.jpg')">
+                        <button class="btn-favorito" id="heart-19" onclick="toggleFavorito(19, 'Letramento acadêmico', 36.58, 'academico1.png')">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="heart-icon">
                       <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
                     </svg>
                   </button>
                         <button class="btn btn-primary" onclick="adicionarCarrinho(this)">Adicionar ao carrinho</button>
-                        <div class="mt-3">
-                        <span>Compartilhar:</span>
-                        <a href="#" class="btn btn-sm btn-outline-primary" onclick="compartilharLivro('facebook', this)">Facebook</a>
-                        <a href="#" class="btn btn-sm btn-outline-success" onclick="compartilharLivro('whatsapp', this)">WhatsApp</a>
-                        <a href="#" class="btn btn-sm btn-outline-info" onclick="compartilharLivro('twitter', this)">Twitter</a>
-                      </div>
+
                       </div>
                     </div>
                   </div>
@@ -263,46 +198,30 @@
                 <div class="row g-0">
                   
                   <div class="col-md-5">
-                    <img id="img-detalhada" src="lugarfeliz.jpg"
+                    <img id="img-detalhada" src="academico2.jpg"
                       class="img-fluid rounded-start w-100 h-100" alt="Produto" style="object-fit: cover;" />
                   </div>
         
                   <div class="col-md-7">
                     <div class="card-body d-flex flex-column h-100 justify-content-between">
                       <div>
-                        <h5 class="card-title titulo-produto">Lugar Feliz</h5>
-                        <p class= "text-muted small descricao-produto">Por Emily Henry (Autor), Ana Rodrigues (Tradutor)<br><br>
-                            Harriet e Wyn são o casal dos sonhos desde a faculdade ― eles sempre foram perfeitos juntos, 
-                        como sal e pimenta, mel e chá, queijo e goia­bada. Só que agora ― por razões sobre as quais não conversam ― eles não combinam mais.
-                            Faz cinco meses que Harriet e Wyn terminaram, e ainda não contaram aos seus melhores amigos.
-                            Assim, continuam dividindo o maior quarto da casa no Maine onde sua turma de amigos passa 
-                        férias há uma década. Todo ano, por uma semana vibrante e colorida, eles dão uma pausa na rotina e vão beber vinho, 
-                        se empanturrar de queijo e frutos do mar e curtir a praia com as suas pessoas favoritas.
-                           Só que este ano Harriet e Wyn estão mentindo na cara dura enquanto 
-                        tentam disfarçar que ainda se querem desesperadamente. 
-                        Porque a casa no Maine está à venda, e esta é a última semana que os amigos terão para ficar juntos no paraíso. 
-                           Harriet e Wyn não querem estra­gar as férias, então fingem que está tudo bem. 
-                        Ela vai continuar sendo a médica-residente motivada que jamais começa uma briga, e ele, 
-                        o cara charmoso e descontraído que nunca deixa transparecer os problemas.
-                           É um plano infalível ― se você olhar bem de lon­ge e com óculos de sol com manchas de 
-                        protetor solar nas lentes. Depois de anos apaixonados, não deve ser tão difícil fingir por 
-                        apenas uma semana, na frente das pessoas que conhecem os dois como ninguém… certo?</p>
-                        <p class= "card-text text-dark fw-bold fs-5 preco-produto">R$ 39.90</p>
+                        <h5 class="card-title titulo-produto">Carta de uma orientadora: Sobre pesquisa e escrita acadêmica </h5>
+                        <p class= "text-muted small descricao-produto">Por Debora Diniz (Autor)<br><br>
+                           Com o rigor e a ternura que marcam sua trajetória profissional premiada, em Carta de uma orientadora , 
+                           Debora Diniz compartilha sugestões sobre como você pode se descobrir uma leitora, pesquisadora e escritora. 
+                           Nesta carta ao mesmo tempo íntima e pública, não espere fórmulas universais, mas uma tentativa 
+                           de se aproximar da sua realidade</p>
+                        <p class= "card-text text-dark fw-bold fs-5 preco-produto">R$ 38.40</p>
                       </div>
                       <div class="d-flex justify-content-between align-items-center">
                         <a href="#!" class="text-dark fw-bold" onclick="fecharCards()">Fechar</a>
-                         <button class="btn-favorito" id="heart-20" onclick="toggleFavorito(20, 'Lugar Feliz', 39.90, 'lugarfeliz.jpg')">
+                         <button class="btn-favorito" id="heart-20" onclick="toggleFavorito(20, 'Carta de uma orientadora', 38.40, 'academico2.jpg')">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="heart-icon">
                       <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
                     </svg>
                   </button>
                         <button class="btn btn-primary" onclick="adicionarCarrinho(this)">Adicionar ao carrinho</button>
-                        <div class="mt-3">
-                          <span>Compartilhar:</span>
-                          <a href="#" class="btn btn-sm btn-outline-primary" onclick="compartilharLivro('facebook', this)">Facebook</a>
-                          <a href="#" class="btn btn-sm btn-outline-success" onclick="compartilharLivro('whatsapp', this)">WhatsApp</a>
-                          <a href="#" class="btn btn-sm btn-outline-info" onclick="compartilharLivro('twitter', this)">Twitter</a>
-                        </div>
+
                       </div>
                     </div>
                   </div>
@@ -318,44 +237,33 @@
                 <div class="row g-0">
                   
                   <div class="col-md-5">
-                    <img id="img-detalhada" src="cortedenevoaefuria.jpg"
+                    <img id="img-detalhada" src="academico3.png"
                       class="img-fluid rounded-start w-100 h-100" alt="Produto" style="object-fit: cover;" />
                   </div>
         
                   <div class="col-md-7">
                     <div class="card-body d-flex flex-column h-100 justify-content-between">
                       <div>
-                        <h5 class= "card-title titulo-produto" >Corte de névoa e fúria (Vol. 2 Corte de espinhos e rosas)</h5>
-                        <p class= "text-muted small descricao-produto">Por Sarah J. Maas (Autor), Mariana Kohnert (Tradutor)<br><br>
-                            Neste livro, seguimos a saga de Feyre Archeron, que morreu Sob a Montanha. Nas garras de Amarantha, 
-                        a jovem humana que ansiava por amor e proteção deixou de existir. Das cinzas de seu velho eu, 
-                        Feyre Quebradora da Maldição foi Feita - com poderes de sete Grão-Feéricos... e uma vontade tão férrea 
-                        quanto o metal temido por eles.
-                            Seu coração no entanto, permanece humano, vulnerável. Incapaz de esquecer o que sofreu para 
-                        libertar o povo de Tamlin... e o pacto firmado com Rhysand, senhor da Corte Noturna. 
-                        Mas mesmo assim, Feyre se esforça para reconstruir o lar que criou na Corte Primaveril.
-                        Então por que é ao lado de Rhys que ela se sente mais plena?
-                            Peça-chave num jogo que desconhece. Feyre deve aprender rapidamente do que á capaz. 
-                        E curar sua alma partida. Pois um antigo mal, muito pior que Amarantha, se agita no horizonte... 
-                        um que ameaça não apenas os feéricos, mas o mundo humano e a muralha também.
-                            Enquanto navega por uma teia de intrigas políticas, paixões e poder, sufocada por Tamlin, 
-                        Feyre precisa decidir o que deseja: amor ou liberdade?</p>
-                        <p class= "card-text text-dark fw-bold fs-5 preco-produto">R$ 57.94</p>
+                        <h5 class= "card-title titulo-produto" >Estratégias de aprendizagem: Como promovê-las </h5>
+                        <p class= "text-muted small descricao-produto">Por Evely Boruchovitch (Autor), Natália Moraes Goes (Autor)<br><br>
+                          As estratégias de aprendizagem são procedimentos utilizados para facilitar a aprendizagem. 
+                          Pesquisas evidenciam a importância das estratégias de aprendizagem para o desempenho escolar e 
+                          acadêmico bem-sucedido, para a aprendizagem autônoma, bem como para a conscientização e o 
+                          controle das variáveis psicológicas que interferem diretamente na aprendizagem. 
+                          A presente obra foi concebida justamente para apresentar ao leitor interessado um conjunto 
+                          sólido de orientações e atividades, além dos fundamentos teóricos, para que possa ensinar e 
+                          promover o uso de estratégias de aprendizagem cognitivas e metacognitivas.</p>
+                        <p class= "card-text text-dark fw-bold fs-5 preco-produto">R$ 27.70</p>
                       </div>
                       <div class="d-flex justify-content-between align-items-center">
                         <a href="#!" class="text-dark fw-bold" onclick="fecharCards()">Fechar</a>
-                        <button class="btn-favorito" id="heart-21" onclick="toggleFavorito(21, 'Corte de névoa e fúria', 57.94, 'cortedenevoaefuria.jpg')">
+                        <button class="btn-favorito" id="heart-21" onclick="toggleFavorito(21, 'Estratégias de aprendizagem', 27.70, 'academico3.png')">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="heart-icon">
                       <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
                     </svg>
                   </button>
                         <button class="btn btn-primary" onclick="adicionarCarrinho(this)">Adicionar ao carrinho</button>
-                            <div class="mt-3">
-                              <span>Compartilhar:</span>
-                              <a href="#" class="btn btn-sm btn-outline-primary" onclick="compartilharLivro('facebook', this)">Facebook</a>
-                              <a href="#" class="btn btn-sm btn-outline-success" onclick="compartilharLivro('whatsapp', this)">WhatsApp</a>
-                              <a href="#" class="btn btn-sm btn-outline-info" onclick="compartilharLivro('twitter', this)">Twitter</a>
-                            </div>
+
                       </div>
                     </div>
                   </div>
@@ -371,46 +279,30 @@
                 <div class="row g-0">
                   
                   <div class="col-md-5">
-                    <img id="img-detalhada" src="verity.jpg"
+                    <img id="img-detalhada" src="academico4.jpg"
                       class="img-fluid rounded-start w-100 h-100" alt="Produto" style="object-fit: cover;" />
                   </div>
         
                   <div class="col-md-7">
                     <div class="card-body d-flex flex-column h-100 justify-content-between">
                       <div>
-                        <h5 class="card-title titulo-produto">Verity</h5>
-                        <p class="text-muted small descricao-produto"> Por Colleen Hoover (Autor), Thaís Britto (Tradutor)<br><br>
-                            Verity Crawford é a autora best-seller por trás de uma série de sucesso. Ela está no auge de sua carreira, 
-                        aclamada pela crítica e pelo público, no entanto, um súbito e terrível acidente acaba interrompendo 
-                        suas atividades, deixando-a sem condições de concluir a história... E é nessa complexa circunstância que 
-                        surge Lowen Ashleigh, uma escritora à beira da falência convidada a escrever, sob um pseudônimo, os três 
-                        livros restantes da já consolidada série.
-                            Para que consiga entender melhor o processo criativo de Verity com relação aos livros publicados e, 
-                        ainda, tentar descobrir seus possíveis planos para os próximos, Lowen decide passar alguns dias na casa 
-                        dos Crawford, imersa no caótico escritório de Verity - e, lá, encontra uma espécie de autobiografia onde a 
-                        escritora narra os fatos acontecidos desde o dia em que conhece Jeremy, seu marido, até os instantes 
-                        imediatamente anteriores a seu acidente - incluindo sua perspectiva sobre as tragédias ocorridas às filhas do 
-                        casal.
-                            Quanto mais o tempo passa, mais Lowen se percebe envolvida em uma confusa rede de mentiras e segredos,
-                         e, lentamente, adquire sua própria posição no jogo psicológico que rodeia aquela casa. Emocional e 
-                        fisicamente atraída por Jeremy, ela precisa decidir: expor uma versão que nem ele conhece sobre a própria 
-                        esposa ou manter o sigilo dos escritos de Verity?</p>
-                        <p class="card-text text-dark fw-bold fs-5 preco-produto">R$ 57.94</p>
+                        <h5 class="card-title titulo-produto">Pesquisa social: Teoria, método e criatividade - Série Manuais Acadêmicos</h5>
+                        <p class="text-muted small descricao-produto"> Por Suely Ferreira Deslandes (Compilador)<br><br>
+                            Esta nova edição de "Pesquisa Social: teoria, método e criatividade" foi preparada em novo formato 
+                            para integrar a série Manuais Acadêmicos, recém lançada pela Editora Vozes, com o intuito de continuar 
+                            servindo de referência para os estudantes de graduação na construção de sua monografia e na sua 
+                            introdução ao campo fascinante da pesquisa social e das abordagens qualitativas.</p>
+                        <p class="card-text text-dark fw-bold fs-5 preco-produto">R$ 29.00</p>
                       </div>
                       <div class="d-flex justify-content-between align-items-center">
                         <a href="#!" class="text-dark fw-bold" onclick="fecharCards()">Fechar</a>
-                        <button class="btn-favorito" id="heart-22" onclick="toggleFavorito(22, 'Verity', 57.94, 'verity.jpg')">
+                        <button class="btn-favorito" id="heart-22" onclick="toggleFavorito(22, 'Pesquisa social', 29.00, 'academico4.jpg')">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="heart-icon">
                       <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
                     </svg>
                   </button>
                         <button class="btn btn-primary" onclick="adicionarCarrinho(this)">Adicionar ao carrinho</button>
-                            <div class="mt-3">
-                              <span>Compartilhar:</span>
-                              <a href="#" class="btn btn-sm btn-outline-primary" onclick="compartilharLivro('facebook', this)">Facebook</a>
-                              <a href="#" class="btn btn-sm btn-outline-success" onclick="compartilharLivro('whatsapp', this)">WhatsApp</a>
-                              <a href="#" class="btn btn-sm btn-outline-info" onclick="compartilharLivro('twitter', this)">Twitter</a>
-                            </div>
+
                       </div>
                     </div>
                   </div>
@@ -426,39 +318,31 @@
                 <div class="row g-0">
                   
                   <div class="col-md-5">
-                    <img id="img-detalhada" src="jantarsecreto.jpg"
+                    <img id="img-detalhada" src="academico5.png"
                       class="img-fluid rounded-start w-100 h-100" alt="Produto" style="object-fit: cover;" />
                   </div>
         
                   <div class="col-md-7">
                     <div class="card-body d-flex flex-column h-100 justify-content-between">
                       <div>
-                        <h5 class="card-title titulo-produto">Jantar Secreto</h5>
-                        <p class="text-muted small descricao-produto"> Por Raphael Montes (Autor)<br><br>
-                            Um grupo de jovens deixa uma pequena cidade no Paraná para viver no Rio de Janeiro. Eles alugam um 
-                        apartamento em Copacabana e fazem o possível para pagar a faculdade e manter vivos seus sonhos de 
-                        sucesso na capital fluminense. Mas o dinheiro está curto e o aluguel está vencido. Para sair do buraco e 
-                        manter o apartamento, os amigos adotam uma estratégia heterodoxa: arrecadar fundos por meio de jantares 
-                        secretos, divulgados pela internet para uma clientela exclusiva da elite carioca.
-                            A partir daí, eles se envolvem em uma espiral de crimes, descobrem uma rede de contrabando de corpos, 
-                        matadouros clandestinos e grã-finos excêntricos, e levam ao limite uma índole perversa que jamais imaginaram 
-                        existir em cada um deles.</p>
-                        <p class="card-text text-dark fw-bold fs-5 preco-produto">R$ 43.56</p>
+                        <h5 class="card-title titulo-produto">Que Sinal é Esse?: Neologismos em Libras no Ambiente Acadêmico </h5>
+                        <p class="text-muted small descricao-produto"> Por Hadassa Rodrigues Santos (Autor)<br><br>
+                           Com o aumento significativo de estudantes surdos brasileiros ingressando em cursos de ensino superior, 
+                           surge uma demanda urgente por novos sinais em Libras que facilitem o acesso ao conhecimento científico 
+                           de forma plena e inclusiva. Nesta obra envolvente, a autora explora os processos neológicos que 
+                           emergem na Língua Brasileira de Sinais (Libras), possibilitando a criação de termos especializados 
+                           para o ambiente acadêmico.</p>
+                        <p class="card-text text-dark fw-bold fs-5 preco-produto">R$ 44.00</p>
                       </div>
                       <div class="d-flex justify-content-between align-items-center">
                         <a href="#!" class="text-dark fw-bold" onclick="fecharCards()">Fechar</a>
-                         <button class="btn-favorito" id="heart-23" onclick="toggleFavorito(23, 'Jantar Secreto', 43.56, 'jantarsecreto.jpg')">
+                        <button class="btn-favorito" id="heart-23" onclick="toggleFavorito(23, 'Que Sinal é Esse?', 44.00, 'academico5.png')">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="heart-icon">
                       <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
                     </svg>
                   </button>
                         <button class="btn btn-primary" onclick="adicionarCarrinho(this)">Adicionar ao carrinho</button>
-                          <div class="mt-3">
-                            <span>Compartilhar:</span>
-                            <a href="#" class="btn btn-sm btn-outline-primary" onclick="compartilharLivro('facebook', this)">Facebook</a>
-                            <a href="#" class="btn btn-sm btn-outline-success" onclick="compartilharLivro('whatsapp', this)">WhatsApp</a>
-                            <a href="#" class="btn btn-sm btn-outline-info" onclick="compartilharLivro('twitter', this)">Twitter</a>
-                          </div>
+
                       </div>
                     </div>
                   </div>
@@ -474,43 +358,34 @@
                 <div class="row g-0">
                   
                   <div class="col-md-5">
-                    <img id="img-detalhada" src="ahipotesedoamor.jpg"
+                    <img id="img-detalhada" src="academico6.jpeg"
                       class="img-fluid rounded-start w-100 h-100" alt="Produto" style="object-fit: cover;" />
                   </div>
         
                   <div class="col-md-7">
                     <div class="card-body d-flex flex-column h-100 justify-content-between">
                       <div>
-                        <h5 class="card-title titulo-produto">A Hipótese do Amor</h5>
-                        <p class="text-muted small descricao-produto"> Por Ali Hazelwood (Autor), Thaís Britto (Tradutor)<br><br>
-                            Olive Smith, aluna do doutorado em Biologia da Universidade Stanford, acredita na ciência – não em algo 
-                        incontrolável como o amor.
-                            Depois de sair algumas vezes com Jeremy, ela percebe que sua melhor amiga gosta dele e decide juntá-los. 
-                        Para mostrar que está feliz com essa escolha, Olive precisa ser convincente: afinal, cientistas exigem provas. 
-                            Sem muitas opções, ela resolve inventar um namoro de mentira e, num momento de pânico, beija o primeiro 
-                        homem que vê pela frente.
-                            O problema é que esse homem é Adam Carlsen, um jovem professor de prestígio – conhecido por levar os alunos 
-                        às lágrimas. Por isso, Olive fica chocada quando o tirano dos laboratórios concorda em levar adiante a farsa 
-                        e fingir ser seu namorado. 
-                            De repente, seu pequeno experimento parece perigosamente próximo da combustão e aquela pequena 
-                        possibilidade científica, que era apenas uma hipótese sobre o amor, 
-                        transforma-se em algo totalmente inesperado.</p>
-                        <p class="card-text text-dark fw-bold fs-5 preco-produto">R$ 45.06</p>
+                        <h5 class="card-title titulo-produto">Didática crítica no Brasil </h5>
+                        <p class="text-muted small descricao-produto"> Por Andréa Maturano Longarezi (Compilador),<br><br>
+                           "Semifinalista Jabuti Acadêmico 2024 - categoria Educação e Ensino".
+                         Reunindo importantes estudiosos e se debruçando sobre uma ampla gama de abordagens didáticas, 
+                         esta obra amplia a terceira onda crítica da didática em nosso país.
+                         Aqui está traduzido um enorme esforço de vários coletivos de pesquisadores e professores que têm 
+                         empreendido uma luta histórica de valorização do campo e mostram aqui a sólida, consistente e 
+                         crítica posição da didática no Brasil, que precisa ocupar as agendas das políticas públicas no 
+                         país e alcançar os processos de organização da atividade pedagógica na escola, princípio e 
+                         finalidade da didática enquanto ciência da Educação.</p>
+                        <p class="card-text text-dark fw-bold fs-5 preco-produto">R$ 68.81</p>
                       </div>
                       <div class="d-flex justify-content-between align-items-center">
                         <a href="#!" class="text-dark fw-bold" onclick="fecharCards()">Fechar</a>
-                        <button class="btn-favorito" id="heart-24" onclick="toggleFavorito(24, 'A Hipótese do Amor', 45.06, 'ahipotesedoamor.jpg')">
+                        <button class="btn-favorito" id="heart-24" onclick="toggleFavorito(24, 'Didática crítica no Brasil', 68.81, 'academico6.jpeg')">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="heart-icon">
                       <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
                     </svg>
                   </button>
                         <button class="btn btn-primary" onclick="adicionarCarrinho(this)">Adicionar ao carrinho</button>
-                        <div class="mt-3">
-                          <span>Compartilhar:</span>
-                          <a href="#" class="btn btn-sm btn-outline-primary" onclick="compartilharLivro('facebook', this)">Facebook</a>
-                          <a href="#" class="btn btn-sm btn-outline-success" onclick="compartilharLivro('whatsapp', this)">WhatsApp</a>
-                          <a href="#" class="btn btn-sm btn-outline-info" onclick="compartilharLivro('twitter', this)">Twitter</a>
-                        </div>
+
                       </div>
                     </div>
                   </div>
@@ -548,29 +423,6 @@
     <div id="resultado" class="mt-4 text-center"></div>
   </div>
 </div>
-
-<!-- Botão flutuante do Chatbot -->
-<button id="botao-chat" class="btn btn-primary rounded-circle position-fixed bottom-0 end-0 m-4 shadow" onclick="toggleChat()">
-  💬
-</button>
-
-<!-- Janela do chatbot -->
-<div id="chatbot" class="card position-fixed bottom-0 end-0 m-4 shadow-lg" style="width: 320px; display: none; z-index: 1050;">
-  <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center">
-    <span>📚 Assistente ReLivro</span>
-    <button type="button" class="btn-close btn-close-white btn-sm" aria-label="Fechar" onclick="toggleChat()"></button>
-  </div>
-  <div class="card-body overflow-auto" id="chat-mensagens" style="height: 250px; font-size: 0.9rem;"></div>
-  <div class="card-footer">
-    <input type="text" id="chat-input" class="form-control" placeholder="Digite sua pergunta..." onkeypress="if(event.key === 'Enter') enviarMensagem()">
-  </div>
-</div>
-
-<!-- Botão flutuante de WhatsApp -->
-<a href="https://wa.me/5511912345678" target="_blank" class="btn btn-success position-fixed bottom-0 end-0 me-5 mb-5 rounded-circle shadow" style="width: 56px; height: 56px; font-size: 1.5rem;">
-  <i class="bi bi-whatsapp"></i>
-</a>
-
       
 <script>
   document.getElementById("avaliacaoForm").addEventListener("submit", function (e) {
@@ -591,73 +443,6 @@
     const resultado = document.getElementById("resultado");
     resultado.innerHTML = `<p class="text-success">Avaliação enviada com sucesso!<br>Nota: ${nota} estrelas<br>Comentário: ${comentario}</p>`;
   });
-
-  function compartilharLivro(rede, botao) {
-    const card = botao.closest('.card-detalhado');
-    const titulo = card.querySelector('.titulo-produto').innerText;
-    const descricao = card.querySelector('.descricao-produto').innerText.substring(0, 150) + '...';
-    const url = window.location.href;
-
-    let link = '';
-    switch (rede) {
-      case 'facebook':
-        link = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}&quote=${encodeURIComponent(titulo)}`;
-        break;
-      case 'whatsapp':
-        link = `https://api.whatsapp.com/send?text=${encodeURIComponent(titulo + '\n' + url)}`;
-        break;
-      case 'twitter':
-        link = `https://twitter.com/intent/tweet?text=${encodeURIComponent(titulo)}&url=${encodeURIComponent(url)}`;
-        break;
-      case 'email':
-        link = `mailto:?subject=${encodeURIComponent(titulo)}&body=${encodeURIComponent(descricao + '\n\nLink: ' + url)}`;
-        break;
-    }
-
-    window.open(link, '_blank');
-  }
-
-  function toggleChat() {
-    const chat = document.getElementById("chatbot");
-    chat.style.display = (chat.style.display === "none" || chat.style.display === "") ? "flex" : "none";
-  }
-
-  function enviarMensagem() {
-    const input = document.getElementById("chat-input");
-    const texto = input.value.trim();
-    if (!texto) return;
-
-    adicionarMensagem("Você", texto, "text-end text-primary");
-    input.value = "";
-    setTimeout(() => responder(texto.toLowerCase()), 600);
-  }
-
-  function adicionarMensagem(remetente, texto, classe = "") {
-    const corpo = document.getElementById("chat-mensagens");
-    const msg = document.createElement("div");
-    msg.className = `mb-2 ${classe}`;
-    msg.innerHTML = `<strong>${remetente}:</strong> <div>${texto}</div>`;
-    corpo.appendChild(msg);
-    corpo.scrollTop = corpo.scrollHeight;
-  }
-
-  function responder(pergunta) {
-    let resposta = "Desculpe, não entendi. Pode reformular sua pergunta?";
-
-    if (pergunta.includes("livro") || pergunta.includes("busco")) {
-      resposta = "Você pode procurar livros na aba 'Livros' ou usar a busca no topo da página.";
-    } else if (pergunta.includes("frete")) {
-      resposta = "O frete é calculado automaticamente no carrinho ao informar seu CEP.";
-    } else if (pergunta.includes("pagamento") || pergunta.includes("pix")) {
-      resposta = "Aceitamos Pix, cartão de crédito e boleto bancário.";
-    } else if (pergunta.includes("contato") || pergunta.includes("falar")) {
-      resposta = "Você pode nos contatar pelo WhatsApp: <a href='https://wa.me/5511912345678' target='_blank' class='text-decoration-underline'>clique aqui</a>.";
-    } else if (pergunta.includes("ebook") || pergunta.includes("digital")) {
-      resposta = "Temos ebooks disponíveis na seção 'Ebooks' no menu principal.";
-    }
-
-    adicionarMensagem("ReLivro", resposta, "text-start text-secondary");
-  }
 </script>
                 
     <!--Rodapé-->
@@ -681,7 +466,6 @@
             <li><a class="link-secondary text-decoration-none" href="#">Conteúdo</a></li>
             <li><a class="link-secondary text-decoration-none" href="#">Suporte</a></li>
             <li><a class="link-secondary text-decoration-none" href="#">Comunidade</a></li>
-            <li><a class="link-secondary text-decoration-none" href="blog.html">Blog</a></li>
           </ul>
         </div>
         <div class="col-6 col-md">
@@ -753,6 +537,7 @@
   mostrarMensagem(`📚 "${produto.nome}" foi adicionado ao carrinho!`, 'success');
 }
 
+ // Gerenciamento de favoritos
 let favoritos = JSON.parse(localStorage.getItem('livrosFavoritos')) || [];
 
 function toggleFavorito(id, titulo, preco, imagem) {
@@ -799,7 +584,9 @@ function mostrarMensagem(texto, tipo) {
   }, 3000);
 }
 
+
     </script>
     
+</body>
 </body>
 </html>

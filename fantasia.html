@@ -1,7 +1,10 @@
-<!doctype html>
-<html lang="pt-br">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <!-- Definindo a codificação de caracteres para UTF-8 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fantasia, Horror e Ficção Científica</title>
+     <!-- Definindo a codificação de caracteres para UTF-8 -->
     <meta charset="utf-8">
     <!-- Configurando a visualização para dispositivos móveis -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,7 +12,6 @@
     
     <!-- Link para o CSS do Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <!-- Link para CSS-->
      <link rel="stylesheet" href="style.css">
     <!-- Barra de navegação -->
@@ -66,7 +68,7 @@
                 </ul>
 
                 <!--botao para apagina de favoritos-->
-                <a class="favorito" href="Favaoritos.html"> Favoritos </a>
+                <a class="favorito" href="Favaoritos.html"> Favaoritos </a>
                 
                 <!-- Formulário de busca -->
                 <form class="d-flex" role="search" >
@@ -86,70 +88,16 @@
               </svg>
               <a href="login.html" class="btn btn-blue ms-2">Cadastro</a>
             </button>
-
-            <a href="cliente.html" class="btn btn-blue ms-2 d-flex align-items-center gap-1">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                <path d="M11 10a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0 0 14A7 7 0 0 0 8 1z"/>
-              </svg>
-              <span>Cliente</span>
-            </a>
             </div>
         </div>
     </nav>
 </head>
 <body>
-  <!--Carrosel de Imagens-->
-  <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="carrosel1.jpg" class="d-block w-100" alt="Descrição da Imagem 1">
-            <div class="container">
-                <div class="carousel-caption text-start">
-                    <h1>ReLivro</h1>
-                    <p class="opacity-65">Conectando histórias, renovando conhecimento</p>
-                    <p><a class="btn btn-lg btn-primary" href="cadastro.html">Cadastre-se</a></p>
-                </div>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <img src="carrosel2.jpg" class="d-block w-100" alt="Descrição da Imagem 2">
-            <div class="container">
-                <div class="carousel-caption">
-                    <h1>Conectando leitores a novas e antigas páginas todos os dias.</h1>
-                    <p><a class="btn btn-lg btn-primary" href="cadastro.html">Cadastre-se</a></p>
-                </div>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <img src="carrosel3.jpg" class="d-block w-100" alt="Descrição da Imagem 3">
-            <div class="container">
-                <div class="carousel-caption text-end">
-                    <h1>Novos, seminovos e inesquecíveis</h1>
-                    <p class="opacity-65">Um livro não precisa ser novo para mudar sua vida.</p>
-                    <p><a class="btn btn-lg btn-primary" href="cadastro.html">Saber Mais</a></p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button>
-</div>
+    <body>
  <!--Mais Vendidos-->
  <section style="background-color: #eee;">
     <div class="text-center container py-5">
-      <h4 class="mt-4 mb-5"><strong>Mais Vendidos</strong></h4>
+      <h4 class="mt-4 mb-5"><strong>Fantasia, Horror e Ficção Científica</strong></h4>
       <section style="background-color: #eee;">
 
         <section class="produtos mt-5">
@@ -158,42 +106,42 @@
                 <!-- Produto 1 -->
                 <div class="col-md-4 mb-4">
                     <div class="img-overlay-container" onclick="mostrarCard('detalhe1')">
-                      <img src="aempregada.jpg" class="w-100"  />
+                      <img src="fantasia1.jpeg" class="w-100"  />
                       <div class="img-overlay">Ver mais</div>
                     </div>
                   </div>
                 <!-- Produto 2 -->
                 <div class="col-md-6 col-lg-4 mb-4">
                     <div class="img-overlay-container" onclick="mostrarCard('detalhe2')">
-                        <img src="lugarfeliz.jpg" class="w-100" />
+                        <img src="fantasia2.jpg" class="w-100" />
                         <div class="img-overlay">Ver mais</div>
                       </div>
                 </div>
                  <!-- Produto 3 -->
                  <div class="col-md-6 col-lg-4 mb-4">
                     <div class="img-overlay-container" onclick="mostrarCard('detalhe3')">
-                        <img src="cortedenevoaefuria.jpg" class="w-100" />
+                        <img src="fantasia3.jpeg" class="w-100" />
                         <div class="img-overlay">Ver mais</div>
                       </div>
                   </div>
                    <!-- Produto 4 -->
                 <div class="col-md-6 col-lg-4 mb-4">
                     <div class="img-overlay-container" onclick="mostrarCard('detalhe4')">
-                        <img src="verity.jpg" class="w-100" />
+                        <img src="fantasia4.jpeg" class="w-100" />
                         <div class="img-overlay">Ver mais</div>
                       </div>
                   </div>
                    <!-- Produto 5 -->
                 <div class="col-md-6 col-lg-4 mb-4">
                     <div class="img-overlay-container" onclick="mostrarCard('detalhe5')">
-                        <img src="jantarsecreto.jpg" class="w-100" />
+                        <img src="fantasia5.jpg" class="w-100" />
                         <div class="img-overlay">Ver mais</div>
                       </div>
                   </div>
                    <!-- Produto 6 -->
                 <div class="col-md-6 col-lg-4 mb-4">
                     <div class="img-overlay-container" onclick="mostrarCard('detalhe6')">
-                        <img src="ahipotesedoamor.jpg" class="w-100" />
+                        <img src="fantasia6.jpg" class="w-100" />
                         <div class="img-overlay">Ver mais</div>
                       </div>
                   </div>
@@ -208,46 +156,46 @@
                 <div class="row g-0">
                   
                   <div class="col-md-5">
-                    <img id="img-detalhada" src="aempregada.jpg"
+                    <img id="img-detalhada" src="fantasia1.jpeg"
                       class="img-fluid rounded-start w-100 h-100" alt="Produto" style="object-fit: cover;" />
                   </div>
         
                   <div class="col-md-7">
                     <div class="card-body d-flex flex-column h-100 justify-content-between">
                       <div>
-                        <h5 class="card-title titulo-produto">A Empregada (A empregada – Livro 1): Bem-vinda à família</h5>
-                        <p class="text-muted small descricao-produto">Por Freida McFadden (Autor), Roberta Clapp (Tradutor)<br><br>
-                            Todos os dias, Millie limpa a casa de Nina e Andrew Winchester de cima a baixo.
-                            Pega a filha deles na escola. Prepara refeições deliciosas para a família toda 
-                        antes de poder se recolher e enfim comer o próprio jantar,sozinha em seu quarto minúsculo 
-                        e claustrofóbico no sótão.
-                            Quando Nina passa a sujar todos os cômodos de propósito só para assisti-la limpar, 
-                        Millie tenta não perder a cabeça. Quando ela conta mentiras perturbadoras sobre a 
-                        própria filha e tortura psicologicamente o marido, que parece mais e mais fragilizado, 
-                        Millie tenta ignorar.
-                            Afinal, com seu passado problemático, ela tem mais é que agradecer por ter 
-                        conseguido esse emprego.
-                            No entanto, ao olhar bem dentro dos lindos e doces olhos de Andrew e ver o 
-                        sofrimento contido neles, Millie não consegue deixar de imaginar como seria ter a vida de Nina. 
-                        O closet cheio de roupas, o carro elegante, o marido perfeito.
-                           Logo os Winchesters vão descobrir que não fazem a menor ideia de quem Millie é de verdade. 
-                           Nem do que ela é capaz de fazer...</p>
-                        <p class="card-text text-dark fw-bold fs-5 preco-produto">R$ 44.90</p>
+                        <h5 class="card-title titulo-produto">Quarta asa</h5>
+                        <p class="text-muted small descricao-produto">Por Rebecca Yarros (Autor)<br><br>
+                           Um dragão sem seu cavaleiro é uma tragédia.
+                           Um cavaleiro sem seu dragão é um homem morto.
+                           Em Quarta Asa, best-seller #1 do The New York Times, uma jovem precisa sobreviver ao 
+                           treinamento em uma escola de elite para poderosos cavaleiros de dragões, onde a única regra é
+                            se formar... ou morrer tentando.
+                           Violet Sorrengail, uma jovem de vinte anos, estava destinada a entrar na Divisão dos Escribas,
+                            levando uma vida relativamente tranquila entre os livros e as aulas de História. No entanto, 
+                            a general comandante das forças de Navarre – também conhecida como sua mãe –, durona como as 
+                            garras de um dragão, ordena que Violet se junte às centenas de candidatos que buscam se tornar a elite de seu país: cavaleiros de dragões.
+                           O problema é que, quando você é menor que todos os demais candidatos e certamente mais frágil
+                            que eles, a morte está a apenas uma batida de coração de distância... Porque os dragões não 
+                            se unem a humanos “frágeis”. Eles os reduzem a cinzas.
+                           Todos no Instituto Militar Basgiath têm um objetivo. Com menos dragões disponíveis que cadetes,
+                            a maioria estaria disposta a matar Violet para aumentar suas próprias chances de sucesso. 
+                            O restante a mataria apenas por ser filha de quem é – e um bom exemplo disso parece ser Xaden
+                             Riorson, o líder de esquadrão mais poderoso e implacável na Divisão dos Cavaleiros.
+                           Entre amigos, inimigos e amantes, Violet precisará contar com sua inteligência se quiser 
+                           sobreviver. Mas as proteções do reino estão falhando e a cada dia que passa a guerra se torna 
+                           mais mortal. E o pior: Violet começa a suspeitar que a liderança está escondendo um terrível 
+                           segredo.</p>
+                        <p class="card-text text-dark fw-bold fs-5 preco-produto">R$ 69.21</p>
                       </div>
                       <div class="d-flex justify-content-between align-items-center">
                         <a href="#!" class="text-dark fw-bold" onclick="fecharCards()">Fechar</a>
-                        <button class="btn-favorito" id="heart-19" onclick="toggleFavorito(19, 'A Empregada', 44.90, 'aempregada.jpg')">
+                        <button class="btn-favorito" id="heart-49" onclick="toggleFavorito(49, 'Quarta asa', 69.21, 'fantasia1.jpeg')">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="heart-icon">
                       <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
                     </svg>
                   </button>
                         <button class="btn btn-primary" onclick="adicionarCarrinho(this)">Adicionar ao carrinho</button>
-                        <div class="mt-3">
-                        <span>Compartilhar:</span>
-                        <a href="#" class="btn btn-sm btn-outline-primary" onclick="compartilharLivro('facebook', this)">Facebook</a>
-                        <a href="#" class="btn btn-sm btn-outline-success" onclick="compartilharLivro('whatsapp', this)">WhatsApp</a>
-                        <a href="#" class="btn btn-sm btn-outline-info" onclick="compartilharLivro('twitter', this)">Twitter</a>
-                      </div>
+
                       </div>
                     </div>
                   </div>
@@ -263,46 +211,42 @@
                 <div class="row g-0">
                   
                   <div class="col-md-5">
-                    <img id="img-detalhada" src="lugarfeliz.jpg"
+                    <img id="img-detalhada" src="fantasia2.jpg"
                       class="img-fluid rounded-start w-100 h-100" alt="Produto" style="object-fit: cover;" />
                   </div>
         
                   <div class="col-md-7">
                     <div class="card-body d-flex flex-column h-100 justify-content-between">
                       <div>
-                        <h5 class="card-title titulo-produto">Lugar Feliz</h5>
-                        <p class= "text-muted small descricao-produto">Por Emily Henry (Autor), Ana Rodrigues (Tradutor)<br><br>
-                            Harriet e Wyn são o casal dos sonhos desde a faculdade ― eles sempre foram perfeitos juntos, 
-                        como sal e pimenta, mel e chá, queijo e goia­bada. Só que agora ― por razões sobre as quais não conversam ― eles não combinam mais.
-                            Faz cinco meses que Harriet e Wyn terminaram, e ainda não contaram aos seus melhores amigos.
-                            Assim, continuam dividindo o maior quarto da casa no Maine onde sua turma de amigos passa 
-                        férias há uma década. Todo ano, por uma semana vibrante e colorida, eles dão uma pausa na rotina e vão beber vinho, 
-                        se empanturrar de queijo e frutos do mar e curtir a praia com as suas pessoas favoritas.
-                           Só que este ano Harriet e Wyn estão mentindo na cara dura enquanto 
-                        tentam disfarçar que ainda se querem desesperadamente. 
-                        Porque a casa no Maine está à venda, e esta é a última semana que os amigos terão para ficar juntos no paraíso. 
-                           Harriet e Wyn não querem estra­gar as férias, então fingem que está tudo bem. 
-                        Ela vai continuar sendo a médica-residente motivada que jamais começa uma briga, e ele, 
-                        o cara charmoso e descontraído que nunca deixa transparecer os problemas.
-                           É um plano infalível ― se você olhar bem de lon­ge e com óculos de sol com manchas de 
-                        protetor solar nas lentes. Depois de anos apaixonados, não deve ser tão difícil fingir por 
-                        apenas uma semana, na frente das pessoas que conhecem os dois como ninguém… certo?</p>
-                        <p class= "card-text text-dark fw-bold fs-5 preco-produto">R$ 39.90</p>
+                        <h5 class="card-title titulo-produto">Assistente do Vilão </h5>
+                        <p class= "text-muted small descricao-produto">Por Hannah Nicole Maehrer (Autor), Isabela Sampaio (Tradutor)<br><br>
+                          PROCURA-SE ASSISTENTE: Vilão notório do alto escalão busca assistente leal e equilibrado para funções de 
+                          escritório não especificadas, apoio à equipe para caos e terror aleatórios e outras Coisas Sombrias em Geral. 
+                          Discrição é essencial. Excelentes benefícios.
+                          Com uma família para sustentar, Evie Sage precisa desesperadamente de um trabalho. Então, quando um esbarrão 
+                          acidental com o Vilão mais famoso de Rennedawn resulta em uma oferta de emprego, ela aceita sem pensar duas vezes.
+                          Alegre, fofa e divertida, Evie sabe que esse cargo não é bem o seu perfil, mas sabe também que nenhum trabalho 
+                          é perfeito. O que ela jamais esperaria era desenvolver uma queda por seu chefe aterrorizante, temperamental e 
+                          inegavelmente gato.
+                          Quando finalmente se acostuma com as diversas cabeças decepadas penduradas no teto e com o barulho estranho de 
+                          globos oculares errantes sendo esmagados sob seus pés, Evie começa a suspeitar de que algo estranho pode estar 
+                          acontecendo no reino: alguém quer acabar com o Vilão e com todo o seu império nefasto.
+                          Agora, além de se esforçar para não babar pelo seu chefe, ela também precisa descobrir quem está tentando 
+                          sabotar seu trabalho e fazer de tudo para impedi-lo. Afinal, não é fácil encontrar um bom emprego.
+                          Assistente do Vilão é o início de uma série de fantasia romântica autêntica e cheia de humor, que mistura 
+                          contos de fadas e ambiente corporativo. Ideal para os fãs de Shrek , Enrolados , Wandinha , Nimona e, claro, 
+                          para todos que acreditam que príncipes são bons, mas vilões são melhores.</p>
+                        <p class= "card-text text-dark fw-bold fs-5 preco-produto">R$ 39.82</p>
                       </div>
                       <div class="d-flex justify-content-between align-items-center">
                         <a href="#!" class="text-dark fw-bold" onclick="fecharCards()">Fechar</a>
-                         <button class="btn-favorito" id="heart-20" onclick="toggleFavorito(20, 'Lugar Feliz', 39.90, 'lugarfeliz.jpg')">
+                        <button class="btn-favorito" id="heart-50" onclick="toggleFavorito(50, 'Assistente do Vilão', 69.21, 'fantasia2.jpg')">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="heart-icon">
                       <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
                     </svg>
                   </button>
                         <button class="btn btn-primary" onclick="adicionarCarrinho(this)">Adicionar ao carrinho</button>
-                        <div class="mt-3">
-                          <span>Compartilhar:</span>
-                          <a href="#" class="btn btn-sm btn-outline-primary" onclick="compartilharLivro('facebook', this)">Facebook</a>
-                          <a href="#" class="btn btn-sm btn-outline-success" onclick="compartilharLivro('whatsapp', this)">WhatsApp</a>
-                          <a href="#" class="btn btn-sm btn-outline-info" onclick="compartilharLivro('twitter', this)">Twitter</a>
-                        </div>
+
                       </div>
                     </div>
                   </div>
@@ -318,44 +262,41 @@
                 <div class="row g-0">
                   
                   <div class="col-md-5">
-                    <img id="img-detalhada" src="cortedenevoaefuria.jpg"
+                    <img id="img-detalhada" src="fantasia3.jpeg"
                       class="img-fluid rounded-start w-100 h-100" alt="Produto" style="object-fit: cover;" />
                   </div>
         
                   <div class="col-md-7">
                     <div class="card-body d-flex flex-column h-100 justify-content-between">
                       <div>
-                        <h5 class= "card-title titulo-produto" >Corte de névoa e fúria (Vol. 2 Corte de espinhos e rosas)</h5>
-                        <p class= "text-muted small descricao-produto">Por Sarah J. Maas (Autor), Mariana Kohnert (Tradutor)<br><br>
-                            Neste livro, seguimos a saga de Feyre Archeron, que morreu Sob a Montanha. Nas garras de Amarantha, 
-                        a jovem humana que ansiava por amor e proteção deixou de existir. Das cinzas de seu velho eu, 
-                        Feyre Quebradora da Maldição foi Feita - com poderes de sete Grão-Feéricos... e uma vontade tão férrea 
-                        quanto o metal temido por eles.
-                            Seu coração no entanto, permanece humano, vulnerável. Incapaz de esquecer o que sofreu para 
-                        libertar o povo de Tamlin... e o pacto firmado com Rhysand, senhor da Corte Noturna. 
-                        Mas mesmo assim, Feyre se esforça para reconstruir o lar que criou na Corte Primaveril.
-                        Então por que é ao lado de Rhys que ela se sente mais plena?
-                            Peça-chave num jogo que desconhece. Feyre deve aprender rapidamente do que á capaz. 
-                        E curar sua alma partida. Pois um antigo mal, muito pior que Amarantha, se agita no horizonte... 
-                        um que ameaça não apenas os feéricos, mas o mundo humano e a muralha também.
-                            Enquanto navega por uma teia de intrigas políticas, paixões e poder, sufocada por Tamlin, 
-                        Feyre precisa decidir o que deseja: amor ou liberdade?</p>
-                        <p class= "card-text text-dark fw-bold fs-5 preco-produto">R$ 57.94</p>
+                        <h5 class= "card-title titulo-produto">Powerless</h5>
+                        <p class= "text-muted small descricao-produto">Por Lauren Roberts (Autor), Ivanir Calado (Tradutor)<br><br>
+                     Kai é um príncipe poderoso, treinado para matar. Paedyn é uma garota comum que sobrevive fingindo 
+                     ter poderes. Quando os caminhos dos dois se encontram por acaso, eles não imaginam que serão 
+                     oponentes em uma competição mágica brutal. Nem que se verão envolvidos em um romance proibido e 
+                     perigoso ― tão impossível quanto inevitável.
+                     Apenas os Notáveis são aceitos no reino de Ilya. Os poderes diversos que possuem há décadas foram 
+                     concedidos pela Peste, e aqueles que nascem Comuns são apenas isso ― comuns. Quando o rei decretou 
+                     que qualquer pessoa sem uma habilidade especial fosse perseguida e banida, Paedyn Gray tornou-se 
+                     criminosa por destino e ladra por necessidade.
+                     Sobreviver nas favelas sem ter um poder não é simples, e Paedyn sabe disso melhor do que ninguém. 
+                     Treinada para mentir, ela se apresenta como uma Psíquica, camuflando-se da melhor forma possível em 
+                     meio aos outros. Até o dia em que salva a vida de Kai, um dos príncipes de Ilya. De repente, ela se 
+                     vê convocada para as Provas do Expurgo, uma competição destinada a exibir os poderes dos Notáveis ― 
+                     exatamente o que ela não tem. Para piorar, Kai é um de seus oponentes, e fica cada vez mais difícil 
+                     ignorar a atração que cresce entre os dois. A realidade é que, se as Provas não matarem Paedyn, Kai 
+                     certamente o fará quando descobrir que ela é… completamente Comum.</p>
+                        <p class= "card-text text-dark fw-bold fs-5 preco-produto">R$ 60.20</p>
                       </div>
                       <div class="d-flex justify-content-between align-items-center">
                         <a href="#!" class="text-dark fw-bold" onclick="fecharCards()">Fechar</a>
-                        <button class="btn-favorito" id="heart-21" onclick="toggleFavorito(21, 'Corte de névoa e fúria', 57.94, 'cortedenevoaefuria.jpg')">
+                        <button class="btn-favorito" id="heart-51" onclick="toggleFavorito(51, 'Powerless', 60.20, 'fantasia3.jpeg')">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="heart-icon">
                       <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
                     </svg>
                   </button>
                         <button class="btn btn-primary" onclick="adicionarCarrinho(this)">Adicionar ao carrinho</button>
-                            <div class="mt-3">
-                              <span>Compartilhar:</span>
-                              <a href="#" class="btn btn-sm btn-outline-primary" onclick="compartilharLivro('facebook', this)">Facebook</a>
-                              <a href="#" class="btn btn-sm btn-outline-success" onclick="compartilharLivro('whatsapp', this)">WhatsApp</a>
-                              <a href="#" class="btn btn-sm btn-outline-info" onclick="compartilharLivro('twitter', this)">Twitter</a>
-                            </div>
+
                       </div>
                     </div>
                   </div>
@@ -371,46 +312,37 @@
                 <div class="row g-0">
                   
                   <div class="col-md-5">
-                    <img id="img-detalhada" src="verity.jpg"
+                    <img id="img-detalhada" src="fantasia4.jpeg"
                       class="img-fluid rounded-start w-100 h-100" alt="Produto" style="object-fit: cover;" />
                   </div>
         
                   <div class="col-md-7">
                     <div class="card-body d-flex flex-column h-100 justify-content-between">
                       <div>
-                        <h5 class="card-title titulo-produto">Verity</h5>
-                        <p class="text-muted small descricao-produto"> Por Colleen Hoover (Autor), Thaís Britto (Tradutor)<br><br>
-                            Verity Crawford é a autora best-seller por trás de uma série de sucesso. Ela está no auge de sua carreira, 
-                        aclamada pela crítica e pelo público, no entanto, um súbito e terrível acidente acaba interrompendo 
-                        suas atividades, deixando-a sem condições de concluir a história... E é nessa complexa circunstância que 
-                        surge Lowen Ashleigh, uma escritora à beira da falência convidada a escrever, sob um pseudônimo, os três 
-                        livros restantes da já consolidada série.
-                            Para que consiga entender melhor o processo criativo de Verity com relação aos livros publicados e, 
-                        ainda, tentar descobrir seus possíveis planos para os próximos, Lowen decide passar alguns dias na casa 
-                        dos Crawford, imersa no caótico escritório de Verity - e, lá, encontra uma espécie de autobiografia onde a 
-                        escritora narra os fatos acontecidos desde o dia em que conhece Jeremy, seu marido, até os instantes 
-                        imediatamente anteriores a seu acidente - incluindo sua perspectiva sobre as tragédias ocorridas às filhas do 
-                        casal.
-                            Quanto mais o tempo passa, mais Lowen se percebe envolvida em uma confusa rede de mentiras e segredos,
-                         e, lentamente, adquire sua própria posição no jogo psicológico que rodeia aquela casa. Emocional e 
-                        fisicamente atraída por Jeremy, ela precisa decidir: expor uma versão que nem ele conhece sobre a própria 
-                        esposa ou manter o sigilo dos escritos de Verity?</p>
-                        <p class="card-text text-dark fw-bold fs-5 preco-produto">R$ 57.94</p>
+                        <h5 class="card-title titulo-produto">Divinos rivais </h5>
+                        <p class="text-muted small descricao-produto"> Por Rebecca Ross (Autor), Sofia Soter (Tradutor) <br><br>
+                        Após séculos adormecidos, os deuses estão em guerra novamente. No entanto, a única preocupação de Iris
+                        Winnow, uma jovem jornalista de dezoito anos, é manter sua família unida e em segurança.
+                        Enquanto a mãe de Iris sofre para superar um vício e o irmão está desaparecido em meio às trincheiras 
+                        da guerra, a melhor forma de a garota atingir seu objetivo é conquistando a vaga de colunista no jornal
+                        onde trabalha, a Gazeta de Oath.
+                        Enquanto isso, para lidar com suas preocupações, Iris escreve cartas para o irmão. Porém, misteriosamente, 
+                        elas vão parar nas mãos de Roman Kitt, seu insensível e fascinante rival na redação do jornal.
+                        Quando ele passa a responder anonimamente as cartas, os dois criam uma conexão mágica que seguirá Iris 
+                        até a linha de frente da batalha, em uma busca por seu irmão, pela salvação da humanidade e pelo amor.
+                        Divinos rivais é o início de uma emocionante duologia da autora best-seller Rebecca Ross. Um romance 
+                        repleto de esperança, desilusões e o incomparável poder do amor.</p>
+                        <p class="card-text text-dark fw-bold fs-5 preco-produto">R$ 45.43</p>
                       </div>
                       <div class="d-flex justify-content-between align-items-center">
                         <a href="#!" class="text-dark fw-bold" onclick="fecharCards()">Fechar</a>
-                        <button class="btn-favorito" id="heart-22" onclick="toggleFavorito(22, 'Verity', 57.94, 'verity.jpg')">
+                        <button class="btn-favorito" id="heart-52" onclick="toggleFavorito(52, 'Divinos rivais', 45.43, 'fantasia4.jpeg')">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="heart-icon">
                       <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
                     </svg>
                   </button>
                         <button class="btn btn-primary" onclick="adicionarCarrinho(this)">Adicionar ao carrinho</button>
-                            <div class="mt-3">
-                              <span>Compartilhar:</span>
-                              <a href="#" class="btn btn-sm btn-outline-primary" onclick="compartilharLivro('facebook', this)">Facebook</a>
-                              <a href="#" class="btn btn-sm btn-outline-success" onclick="compartilharLivro('whatsapp', this)">WhatsApp</a>
-                              <a href="#" class="btn btn-sm btn-outline-info" onclick="compartilharLivro('twitter', this)">Twitter</a>
-                            </div>
+
                       </div>
                     </div>
                   </div>
@@ -426,39 +358,32 @@
                 <div class="row g-0">
                   
                   <div class="col-md-5">
-                    <img id="img-detalhada" src="jantarsecreto.jpg"
+                    <img id="img-detalhada" src="fantasia5.jpg"
                       class="img-fluid rounded-start w-100 h-100" alt="Produto" style="object-fit: cover;" />
                   </div>
         
                   <div class="col-md-7">
                     <div class="card-body d-flex flex-column h-100 justify-content-between">
                       <div>
-                        <h5 class="card-title titulo-produto">Jantar Secreto</h5>
-                        <p class="text-muted small descricao-produto"> Por Raphael Montes (Autor)<br><br>
-                            Um grupo de jovens deixa uma pequena cidade no Paraná para viver no Rio de Janeiro. Eles alugam um 
-                        apartamento em Copacabana e fazem o possível para pagar a faculdade e manter vivos seus sonhos de 
-                        sucesso na capital fluminense. Mas o dinheiro está curto e o aluguel está vencido. Para sair do buraco e 
-                        manter o apartamento, os amigos adotam uma estratégia heterodoxa: arrecadar fundos por meio de jantares 
-                        secretos, divulgados pela internet para uma clientela exclusiva da elite carioca.
-                            A partir daí, eles se envolvem em uma espiral de crimes, descobrem uma rede de contrabando de corpos, 
-                        matadouros clandestinos e grã-finos excêntricos, e levam ao limite uma índole perversa que jamais imaginaram 
-                        existir em cada um deles.</p>
-                        <p class="card-text text-dark fw-bold fs-5 preco-produto">R$ 43.56</p>
+                        <h5 class="card-title titulo-produto">Estilhaça-me </h5>
+                        <p class="text-muted small descricao-produto">Por Tahereh Mafi (Autor) <br><br>
+                       Um toque é o bastante. Com apenas um toque, Juliette Ferrars é capaz de fazer um homem adulto se 
+                       ajoelhar de dor e implorar por misericórdia. Um único toque de Juliette pode matar. Ninguém sabe 
+                       por que a garota tem um poder tão impressionante, o qual ela acredita ser uma maldição, um fardo 
+                       que uma pessoa sozinha seria incapaz de carregar. Contudo, o Restabelecimento enxerga essa 
+                       característica como um dom e passa a vê-la como uma oportunidade – uma oportunidade de usá-la como 
+                       arma letal. Porém, Juliette tem seus próprios planos.</p>
+                        <p class="card-text text-dark fw-bold fs-5 preco-produto">R$ 40.32</p>
                       </div>
                       <div class="d-flex justify-content-between align-items-center">
                         <a href="#!" class="text-dark fw-bold" onclick="fecharCards()">Fechar</a>
-                         <button class="btn-favorito" id="heart-23" onclick="toggleFavorito(23, 'Jantar Secreto', 43.56, 'jantarsecreto.jpg')">
+                        <button class="btn-favorito" id="heart-53" onclick="toggleFavorito(53, 'Estilhaça-me', 40.32, 'fantasia5.jpg')">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="heart-icon">
                       <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
                     </svg>
                   </button>
                         <button class="btn btn-primary" onclick="adicionarCarrinho(this)">Adicionar ao carrinho</button>
-                          <div class="mt-3">
-                            <span>Compartilhar:</span>
-                            <a href="#" class="btn btn-sm btn-outline-primary" onclick="compartilharLivro('facebook', this)">Facebook</a>
-                            <a href="#" class="btn btn-sm btn-outline-success" onclick="compartilharLivro('whatsapp', this)">WhatsApp</a>
-                            <a href="#" class="btn btn-sm btn-outline-info" onclick="compartilharLivro('twitter', this)">Twitter</a>
-                          </div>
+
                       </div>
                     </div>
                   </div>
@@ -474,43 +399,34 @@
                 <div class="row g-0">
                   
                   <div class="col-md-5">
-                    <img id="img-detalhada" src="ahipotesedoamor.jpg"
+                    <img id="img-detalhada" src="fantasia6.jpg"
                       class="img-fluid rounded-start w-100 h-100" alt="Produto" style="object-fit: cover;" />
                   </div>
         
                   <div class="col-md-7">
                     <div class="card-body d-flex flex-column h-100 justify-content-between">
                       <div>
-                        <h5 class="card-title titulo-produto">A Hipótese do Amor</h5>
-                        <p class="text-muted small descricao-produto"> Por Ali Hazelwood (Autor), Thaís Britto (Tradutor)<br><br>
-                            Olive Smith, aluna do doutorado em Biologia da Universidade Stanford, acredita na ciência – não em algo 
-                        incontrolável como o amor.
-                            Depois de sair algumas vezes com Jeremy, ela percebe que sua melhor amiga gosta dele e decide juntá-los. 
-                        Para mostrar que está feliz com essa escolha, Olive precisa ser convincente: afinal, cientistas exigem provas. 
-                            Sem muitas opções, ela resolve inventar um namoro de mentira e, num momento de pânico, beija o primeiro 
-                        homem que vê pela frente.
-                            O problema é que esse homem é Adam Carlsen, um jovem professor de prestígio – conhecido por levar os alunos 
-                        às lágrimas. Por isso, Olive fica chocada quando o tirano dos laboratórios concorda em levar adiante a farsa 
-                        e fingir ser seu namorado. 
-                            De repente, seu pequeno experimento parece perigosamente próximo da combustão e aquela pequena 
-                        possibilidade científica, que era apenas uma hipótese sobre o amor, 
-                        transforma-se em algo totalmente inesperado.</p>
-                        <p class="card-text text-dark fw-bold fs-5 preco-produto">R$ 45.06</p>
+                        <h5 class="card-title titulo-produto">Espada de vidro </h5>
+                        <p class="text-muted small descricao-produto"> Por Victoria Aveyard (Autor), Cristian Clemente (Tradutor)<br><br>
+                       O sangue de Mare Barrow é vermelho, da mesma cor da população comum, mas sua habilidade de 
+                       controlar a eletricidade a torna tão poderosa quanto os membros da elite de sangue prateado. 
+                       Depois que essa revelação foi feita em rede nacional, Mare se transformou numa arma perigosa que 
+                       a corte real quer esconder e controlar. Quando finalmente consegue escapar do palácio, Mare 
+                       descobre algo surpreendente: ela não era a única vermelha com poderes. Agora, enquanto foge, a 
+                       garota elétrica tenta encontrar e recrutar outros sanguenovos como ela, para formar um exército 
+                       contra a nobreza opressora. Essa é uma jornada perigosa, e Mare precisará tomar cuidado para não 
+                       se tornar exatamente o tipo de monstro que ela está tentando deter.</p>
+                        <p class="card-text text-dark fw-bold fs-5 preco-produto">R$ 54.33</p>
                       </div>
                       <div class="d-flex justify-content-between align-items-center">
                         <a href="#!" class="text-dark fw-bold" onclick="fecharCards()">Fechar</a>
-                        <button class="btn-favorito" id="heart-24" onclick="toggleFavorito(24, 'A Hipótese do Amor', 45.06, 'ahipotesedoamor.jpg')">
+                        <button class="btn-favorito" id="heart-54" onclick="toggleFavorito(54, 'Espada de vidro', 54.33, 'fantasia6.jpg')">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="heart-icon">
                       <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
                     </svg>
                   </button>
                         <button class="btn btn-primary" onclick="adicionarCarrinho(this)">Adicionar ao carrinho</button>
-                        <div class="mt-3">
-                          <span>Compartilhar:</span>
-                          <a href="#" class="btn btn-sm btn-outline-primary" onclick="compartilharLivro('facebook', this)">Facebook</a>
-                          <a href="#" class="btn btn-sm btn-outline-success" onclick="compartilharLivro('whatsapp', this)">WhatsApp</a>
-                          <a href="#" class="btn btn-sm btn-outline-info" onclick="compartilharLivro('twitter', this)">Twitter</a>
-                        </div>
+
                       </div>
                     </div>
                   </div>
@@ -548,29 +464,6 @@
     <div id="resultado" class="mt-4 text-center"></div>
   </div>
 </div>
-
-<!-- Botão flutuante do Chatbot -->
-<button id="botao-chat" class="btn btn-primary rounded-circle position-fixed bottom-0 end-0 m-4 shadow" onclick="toggleChat()">
-  💬
-</button>
-
-<!-- Janela do chatbot -->
-<div id="chatbot" class="card position-fixed bottom-0 end-0 m-4 shadow-lg" style="width: 320px; display: none; z-index: 1050;">
-  <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center">
-    <span>📚 Assistente ReLivro</span>
-    <button type="button" class="btn-close btn-close-white btn-sm" aria-label="Fechar" onclick="toggleChat()"></button>
-  </div>
-  <div class="card-body overflow-auto" id="chat-mensagens" style="height: 250px; font-size: 0.9rem;"></div>
-  <div class="card-footer">
-    <input type="text" id="chat-input" class="form-control" placeholder="Digite sua pergunta..." onkeypress="if(event.key === 'Enter') enviarMensagem()">
-  </div>
-</div>
-
-<!-- Botão flutuante de WhatsApp -->
-<a href="https://wa.me/5511912345678" target="_blank" class="btn btn-success position-fixed bottom-0 end-0 me-5 mb-5 rounded-circle shadow" style="width: 56px; height: 56px; font-size: 1.5rem;">
-  <i class="bi bi-whatsapp"></i>
-</a>
-
       
 <script>
   document.getElementById("avaliacaoForm").addEventListener("submit", function (e) {
@@ -591,73 +484,6 @@
     const resultado = document.getElementById("resultado");
     resultado.innerHTML = `<p class="text-success">Avaliação enviada com sucesso!<br>Nota: ${nota} estrelas<br>Comentário: ${comentario}</p>`;
   });
-
-  function compartilharLivro(rede, botao) {
-    const card = botao.closest('.card-detalhado');
-    const titulo = card.querySelector('.titulo-produto').innerText;
-    const descricao = card.querySelector('.descricao-produto').innerText.substring(0, 150) + '...';
-    const url = window.location.href;
-
-    let link = '';
-    switch (rede) {
-      case 'facebook':
-        link = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}&quote=${encodeURIComponent(titulo)}`;
-        break;
-      case 'whatsapp':
-        link = `https://api.whatsapp.com/send?text=${encodeURIComponent(titulo + '\n' + url)}`;
-        break;
-      case 'twitter':
-        link = `https://twitter.com/intent/tweet?text=${encodeURIComponent(titulo)}&url=${encodeURIComponent(url)}`;
-        break;
-      case 'email':
-        link = `mailto:?subject=${encodeURIComponent(titulo)}&body=${encodeURIComponent(descricao + '\n\nLink: ' + url)}`;
-        break;
-    }
-
-    window.open(link, '_blank');
-  }
-
-  function toggleChat() {
-    const chat = document.getElementById("chatbot");
-    chat.style.display = (chat.style.display === "none" || chat.style.display === "") ? "flex" : "none";
-  }
-
-  function enviarMensagem() {
-    const input = document.getElementById("chat-input");
-    const texto = input.value.trim();
-    if (!texto) return;
-
-    adicionarMensagem("Você", texto, "text-end text-primary");
-    input.value = "";
-    setTimeout(() => responder(texto.toLowerCase()), 600);
-  }
-
-  function adicionarMensagem(remetente, texto, classe = "") {
-    const corpo = document.getElementById("chat-mensagens");
-    const msg = document.createElement("div");
-    msg.className = `mb-2 ${classe}`;
-    msg.innerHTML = `<strong>${remetente}:</strong> <div>${texto}</div>`;
-    corpo.appendChild(msg);
-    corpo.scrollTop = corpo.scrollHeight;
-  }
-
-  function responder(pergunta) {
-    let resposta = "Desculpe, não entendi. Pode reformular sua pergunta?";
-
-    if (pergunta.includes("livro") || pergunta.includes("busco")) {
-      resposta = "Você pode procurar livros na aba 'Livros' ou usar a busca no topo da página.";
-    } else if (pergunta.includes("frete")) {
-      resposta = "O frete é calculado automaticamente no carrinho ao informar seu CEP.";
-    } else if (pergunta.includes("pagamento") || pergunta.includes("pix")) {
-      resposta = "Aceitamos Pix, cartão de crédito e boleto bancário.";
-    } else if (pergunta.includes("contato") || pergunta.includes("falar")) {
-      resposta = "Você pode nos contatar pelo WhatsApp: <a href='https://wa.me/5511912345678' target='_blank' class='text-decoration-underline'>clique aqui</a>.";
-    } else if (pergunta.includes("ebook") || pergunta.includes("digital")) {
-      resposta = "Temos ebooks disponíveis na seção 'Ebooks' no menu principal.";
-    }
-
-    adicionarMensagem("ReLivro", resposta, "text-start text-secondary");
-  }
 </script>
                 
     <!--Rodapé-->
@@ -681,7 +507,6 @@
             <li><a class="link-secondary text-decoration-none" href="#">Conteúdo</a></li>
             <li><a class="link-secondary text-decoration-none" href="#">Suporte</a></li>
             <li><a class="link-secondary text-decoration-none" href="#">Comunidade</a></li>
-            <li><a class="link-secondary text-decoration-none" href="blog.html">Blog</a></li>
           </ul>
         </div>
         <div class="col-6 col-md">
@@ -724,7 +549,7 @@
     cards.forEach(card => card.style.display = 'none');
   }
 
-  function adicionarCarrinho(botao) {
+ function adicionarCarrinho(botao) {
   const card = botao.closest('.card-detalhado');
   const nome = card.querySelector('.titulo-produto').innerText;
   const preco = card.querySelector('.preco-produto').innerText.replace("R$", "").trim();
@@ -739,7 +564,7 @@
 
   const carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
 
-  // Verifica se o produto já está no carrinho
+  
   const indexExistente = carrinho.findIndex(p => p.nome === produto.nome);
   if (indexExistente > -1) {
     carrinho[indexExistente].quantidade += 1;
@@ -749,10 +574,11 @@
 
   localStorage.setItem("carrinho", JSON.stringify(carrinho));
 
-  // Mensagem no lugar do alert
+  
   mostrarMensagem(`📚 "${produto.nome}" foi adicionado ao carrinho!`, 'success');
 }
 
+// Gerenciamento de favoritos
 let favoritos = JSON.parse(localStorage.getItem('livrosFavoritos')) || [];
 
 function toggleFavorito(id, titulo, preco, imagem) {
@@ -802,4 +628,4 @@ function mostrarMensagem(texto, tipo) {
     </script>
     
 </body>
-</html>
+</body

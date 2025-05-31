@@ -73,3 +73,12 @@ body {
 .text p {
     margin: 0;
 }
+
+   .favorito{
+  top: 40px;
+  left: 390px;
+  position: absolute;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  text-decoration: none;
+}

@@ -1,0 +1,584 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <!-- Definindo a codificação de caracteres para UTF-8 -->
+    <meta charset="utf-8">
+    <!-- Configurando a visualização para dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ReLivro</title>
+    
+    <!-- Link para o CSS do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Link para CSS-->
+     <link rel="stylesheet" href="style.css">
+    <!-- Barra de navegação -->
+    <nav class="navbar navbar-expand-lg" style="background-color: #121212; color: white;">
+        <div class="container-fluid">
+            <!-- Logo da empresa -->
+            <a class="navbar-brand" href="#">
+                <img src="logorelivro.png" alt="Logo" width="80" height="80">
+            </a>
+            <!-- Botão para alternar a navegação em telas menores -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Itens de navegação -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html" style="color:white">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white !important;">
+                            Livros
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#">Novos</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="academicos.html">Acadêmico</a></li>
+                                    <li><a class="dropdown-item" href="arte-cinema-fotografia.html">Arte, Cinema e Fotografia</a></li>
+                                    <li><a class="dropdown-item" href="autoajuda.html">Autoajuda</a></li>
+                                    <li><a class="dropdown-item" href="biografia.html">Biografia e Casos Verdadeiros</a></li>
+                                    <li><a class="dropdown-item" href="crime.html">Crime, Suspense e Mistério</a></li>
+                                    <li><a class="dropdown-item" href="fantasia.html">Fantasia, Horror e Ficção Científica</a></li>
+                                    <li><a class="dropdown-item" href="hqs.html">HQs, Mangás e Graphic Novels</a></li>
+                                    <li><a class="dropdown-item" href="infantilejuvenil.html">Infantil e Infantojuvenil</a></li>
+                                    <li><a class="dropdown-item" href="romances.html">Romance</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item" href="livro.html">Sebo</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="ebooks.html">Ebooks</a></li>
+                        </ul>
+                    </li>                   
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:white">
+                            Nossa História
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="sobrenos.html">Sobre Nós</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="faleconosco.html">Fale Conosco</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!--botao para apagina de favoritos-->
+                <a class="favorito" href="Favaoritos.html"> Favaoritos </a>
+                
+                <!-- Formulário de busca -->
+                <form class="d-flex" role="search" >
+                  <input class="form-control me-2" type="search" placeholder="Procurar Livros" aria-label="Search">
+                  <button class="btn btn-blue" type="submit">Buscar</button>
+              </form>
+              <button type="button" class="btn btn-blue ms-2"> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                </svg>
+                <a href="carrinho.html" class="btn btn-blue ms-2">Carrinho</a>
+                  
+            </button>
+            <button type="button" class="btn btn-blue ms-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                <path d="M3 14s-1 0-1-1 1-3 4-3 4 3 4 3 1 0 1 1-1 1-4 1-4-1-4-1zm2-4a2 2 0 1 1 4 0 2 2 0 0 1-4 0zM8 0a5 5 0 0 0-5 5c0 2.69 2.01 4.86 4.5 5V10a1 1 0 0 1 1 1h1a1 1 0 0 1 1-1V5.5C10 4.01 8.19 2 6 2a5 5 0 0 0-1 10h3a1 1 0 0 1 1-1V5c0-1.42-.87-3-2-3z"/>
+              </svg>
+              <a href="login.html" class="btn btn-blue ms-2">Cadastro</a>
+            </button>
+            </div>
+        </div>
+    </nav>
+</head>
+<body>
+ <!-- Mais Vendidos -->
+<section class="container mt-5">
+    <h4 class="mt-4 mb-5"><strong>Mais Vendidos - eBooks</strong></h4>
+    <div class="row">
+      <!-- Card 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="img-overlay-container" onclick="mostrarCard('detalhe1')">
+          <img src="ebook1.jpg" class="w-100" alt="eBook 1" />
+          <div class="img-overlay">Ver mais</div>
+        </div>
+      </div>
+  
+      <!-- Card 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="img-overlay-container" onclick="mostrarCard('detalhe2')">
+          <img src="ebook2.jpg" class="w-100" alt="eBook 2" />
+          <div class="img-overlay">Ver mais</div>
+        </div>
+      </div>
+  
+      <!-- Card 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="img-overlay-container" onclick="mostrarCard('detalhe3')">
+          <img src="ebook3.jpg" class="w-100" alt="eBook 3" />
+          <div class="img-overlay">Ver mais</div>
+        </div>
+      </div>
+  
+      <!-- Card 4 -->
+      <div class="col-md-4 mb-4">
+        <div class="img-overlay-container" onclick="mostrarCard('detalhe4')">
+          <img src="ebook4.jpg" class="w-100" alt="eBook 4" />
+          <div class="img-overlay">Ver mais</div>
+        </div>
+      </div>
+  
+      <!-- Card 5 -->
+      <div class="col-md-4 mb-4">
+        <div class="img-overlay-container" onclick="mostrarCard('detalhe5')">
+          <img src="ebook5.jpg" class="w-100" alt="eBook 5" />
+          <div class="img-overlay">Ver mais</div>
+        </div>
+      </div>
+  
+      <!-- Card 6 -->
+      <div class="col-md-4 mb-4">
+        <div class="img-overlay-container" onclick="mostrarCard('detalhe6')">
+          <img src="ebook6.jpg" class="w-100" alt="eBook 6" />
+          <div class="img-overlay">Ver mais</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+          
+          <!-- Detalhe eBook 1 -->
+<section id="detalhe1" class="card-detalhado" style="background-color: #eee; display: none;">
+    <div class="container py-4">
+      <div class="card" style="border-radius: 15px;">
+        <div class="row g-0">
+          <div class="col-md-5">
+            <img src="ebook1.jpg" class="img-fluid rounded-start w-100 h-100" alt="eBook 1" />
+          </div>
+          <div class="col-md-7">
+            <div class="card-body d-flex flex-column h-100 justify-content-between">
+              <div>
+                <h5 class="card-title">Como Escrever Melhor (eBook)</h5>
+                <p class="text-muted small">Por João da Silva</p>
+                <p class="text-muted small">Aprenda técnicas de escrita clara, objetiva e envolvente com este guia prático.</p>
+                <p class="card-text text-dark fw-bold fs-5">R$ 14,90</p>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <a href="#!" class="text-dark fw-bold" onclick="fecharCards()">Fechar</a>
+                <button class="btn-favorito" id="heart-13" onclick="toggleFavorito(13, 'Como Escrever Melhor', 14.90, 'ebook1.jpg')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="heart-icon">
+                      <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                    </svg>
+                  </button>
+                <button class="btn btn-primary" onclick="adicionarCarrinho(this)">Adicionar ao carrinho</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Detalhe eBook 2 -->
+  <section id="detalhe2" class="card-detalhado" style="background-color: #eee; display: none;">
+    <div class="container py-4">
+      <div class="card" style="border-radius: 15px;">
+        <div class="row g-0">
+          <div class="col-md-5">
+            <img src="ebook2.jpg" class="img-fluid rounded-start w-100 h-100" alt="eBook 2" />
+          </div>
+          <div class="col-md-7">
+            <div class="card-body d-flex flex-column h-100 justify-content-between">
+              <div>
+                <h5 class="card-title">Finanças para Iniciantes (eBook)</h5>
+                <p class="text-muted small">Por Ana Costa</p>
+                <p class="text-muted small">Descubra como organizar suas finanças e começar a investir com pouco dinheiro.</p>
+                <p class="card-text text-dark fw-bold fs-5">R$ 9,90</p>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <a href="#!" class="text-dark fw-bold" onclick="fecharCards()">Fechar</a>
+                <button class="btn-favorito" id="heart-14" onclick="toggleFavorito(14, 'Finanças para Iniciantes', 9.90, 'ebook2.jpg')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="heart-icon">
+                      <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                    </svg>
+                  </button>
+                <button class="btn btn-primary" onclick="adicionarCarrinho(this)">Adicionar ao carrinho</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Detalhe eBook 3 -->
+  <section id="detalhe3" class="card-detalhado" style="background-color: #eee; display: none;">
+    <div class="container py-4">
+      <div class="card" style="border-radius: 15px;">
+        <div class="row g-0">
+          <div class="col-md-5">
+            <img src="ebook3.jpg" class="img-fluid rounded-start w-100 h-100" alt="eBook 3" />
+          </div>
+          <div class="col-md-7">
+            <div class="card-body d-flex flex-column h-100 justify-content-between">
+              <div>
+                <h5 class="card-title">Cozinha Rápida e Fácil (eBook)</h5>
+                <p class="text-muted small">Por Pedro Lima</p>
+                <p class="text-muted small">Receitas práticas e deliciosas para o dia a dia, com poucos ingredientes.</p>
+                <p class="card-text text-dark fw-bold fs-5">R$ 12,90</p>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <a href="#!" class="text-dark fw-bold" onclick="fecharCards()">Fechar</a>
+                <button class="btn-favorito" id="heart-15" onclick="toggleFavorito(15, 'Cozinha Rápida e Fácil', 12.90, 'ebook3.jpg')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="heart-icon">
+                      <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                    </svg>
+                  </button>
+                <button class="btn btn-primary" onclick="adicionarCarrinho(this)">Adicionar ao carrinho</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Detalhe eBook 4 -->
+  <section id="detalhe4" class="card-detalhado" style="background-color: #eee; display: none;">
+    <div class="container py-4">
+      <div class="card" style="border-radius: 15px;">
+        <div class="row g-0">
+          <div class="col-md-5">
+            <img src="ebook4.jpg" class="img-fluid rounded-start w-100 h-100" alt="eBook 4" />
+          </div>
+          <div class="col-md-7">
+            <div class="card-body d-flex flex-column h-100 justify-content-between">
+              <div>
+                <h5 class="card-title">Inglês Rápido (eBook)</h5>
+                <p class="text-muted small">Por Carla Mendes</p>
+                <p class="text-muted small">Aprenda inglês básico de forma rápida e divertida com este guia essencial.</p>
+                <p class="card-text text-dark fw-bold fs-5">R$ 8,90</p>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <a href="#!" class="text-dark fw-bold" onclick="fecharCards()">Fechar</a>
+                <button class="btn-favorito" id="heart-16" onclick="toggleFavorito(16, 'Inglês Rápido', 8.90, 'ebook4.jpg')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="heart-icon">
+                      <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                    </svg>
+                  </button>
+                <button class="btn btn-primary" onclick="adicionarCarrinho(this)">Adicionar ao carrinho</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Detalhe eBook 5 -->
+  <section id="detalhe5" class="card-detalhado" style="background-color: #eee; display: none;">
+    <div class="container py-4">
+      <div class="card" style="border-radius: 15px;">
+        <div class="row g-0">
+          <div class="col-md-5">
+            <img src="ebook5.jpg" class="img-fluid rounded-start w-100 h-100" alt="eBook 5" />
+          </div>
+          <div class="col-md-7">
+            <div class="card-body d-flex flex-column h-100 justify-content-between">
+              <div>
+                <h5 class="card-title">Produtividade Sem Stress (eBook)</h5>
+                <p class="text-muted small">Por Marcos Tavares</p>
+                <p class="text-muted small">Aprenda a organizar sua rotina e ter foco com menos ansiedade e mais resultado.</p>
+                <p class="card-text text-dark fw-bold fs-5">R$ 11,90</p>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <a href="#!" class="text-dark fw-bold" onclick="fecharCards()">Fechar</a>
+                <button class="btn-favorito" id="heart-17" onclick="toggleFavorito(17, 'Produtividade Sem Stress', 11.90, 'ebook5.jpg')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="heart-icon">
+                      <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                    </svg>
+                  </button>
+                <button class="btn btn-primary" onclick="adicionarCarrinho(this)">Adicionar ao carrinho</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Detalhe eBook 6 -->
+  <section id="detalhe6" class="card-detalhado" style="background-color: #eee; display: none;">
+    <div class="container py-4">
+      <div class="card" style="border-radius: 15px;">
+        <div class="row g-0">
+          <div class="col-md-5">
+            <img src="ebook6.jpg" class="img-fluid rounded-start w-100 h-100" alt="eBook 6" />
+          </div>
+          <div class="col-md-7">
+            <div class="card-body d-flex flex-column h-100 justify-content-between">
+              <div>
+                <h5 class="card-title">Histórias de Mistério (eBook)</h5>
+                <p class="text-muted small">Por Larissa Borges</p>
+                <p class="text-muted small">Contos curtos cheios de suspense e reviravoltas para ler em qualquer lugar.</p>
+                <p class="card-text text-dark fw-bold fs-5">R$ 10,90</p>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <a href="#!" class="text-dark fw-bold" onclick="fecharCards()">Fechar</a>
+                <button class="btn-favorito" id="heart-18" onclick="toggleFavorito(18, 'Histórias de Mistério', 10.90, 'ebook6.jpg')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="heart-icon">
+                      <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                    </svg>
+                  </button>
+               <button class="btn btn-primary" onclick="adicionarCarrinho(this)">Adicionar ao carrinho</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+          
+          <hr>
+          <div class="container card-center">
+            <div class="card shadow p-4 w-100" style="max-width: 500px;">
+              <h4 class="card-title text-center mb-4">Avaliação</h4>
+              <form id="avaliacaoForm">
+                <div class="mb-3 text-center">
+                  <div class="rating">
+                    <input type="radio" id="star5" name="estrela" value="5">
+                    <label for="star5">&#9733;</label>
+                    <input type="radio" id="star4" name="estrela" value="4">
+                    <label for="star4">&#9733;</label>
+                    <input type="radio" id="star3" name="estrela" value="3">
+                    <label for="star3">&#9733;</label>
+                    <input type="radio" id="star2" name="estrela" value="2">
+                    <label for="star2">&#9733;</label>
+                    <input type="radio" id="star1" name="estrela" value="1">
+                    <label for="star1">&#9733;</label>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="comentario" class="form-label">Comentário</label>
+                  <textarea class="form-control" id="comentario" rows="4" placeholder="Digite seu comentário..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Enviar</button>
+              </form>
+              <div id="resultado" class="mt-4 text-center"></div>
+            </div>
+          </div>
+                
+          <script>
+            document.getElementById("avaliacaoForm").addEventListener("submit", function (e) {
+              e.preventDefault();
+          
+              const estrelas = document.querySelector('input[name="estrela"]:checked');
+              const comentario = document.getElementById("comentario").value.trim();
+          
+              if (!estrelas) {
+                alert("Por favor, selecione uma nota.");
+                return;
+              }
+              if (comentario === "") {
+                alert("Por favor, escreva um comentário.");
+                return;
+              }
+              const nota = estrelas.value;
+              const resultado = document.getElementById("resultado");
+              resultado.innerHTML = `<p class="text-success">Avaliação enviada com sucesso!<br>Nota: ${nota} estrelas<br>Comentário: ${comentario}</p>`;
+            });
+          </script>
+          
+    <!--Rodapé-->
+    <footer class="container py-5">
+      <div class="row">
+        <div class="col-12 col-md">
+          <img src="logorelivro.png" width="35" height="35" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
+          <small class="d-block mb-3 text-body-secondary">&copy; 2019–2025</small>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Características</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="link-secondary text-decoration-none" href="#">Funcionalidades</a></li>
+            <li><a class="link-secondary text-decoration-none" href="#">Monitoramento</a></li>
+            <li><a class="link-secondary text-decoration-none" href="#">Segurança</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Recursos</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="link-secondary text-decoration-none" href="#">Conteúdo</a></li>
+            <li><a class="link-secondary text-decoration-none" href="#">Suporte</a></li>
+            <li><a class="link-secondary text-decoration-none" href="#">Comunidade</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Sobre</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="link-secondary text-decoration-none" href="#">Nossa História</a></li>
+            <li><a class="link-secondary text-decoration-none" href="#">Missão e Visão</a></li>
+            <li><a class="link-secondary text-decoration-none" href="#">Equipe</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    
+
+    <!-- Script do Bootstrap para funcionalidades interativas -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        document.querySelectorAll('.dropdown-submenu > a').forEach(function(element) {
+            element.addEventListener('click', function(e) {
+                let submenu = this.nextElementSibling;
+                if (submenu.style.display === 'block') {
+                    submenu.style.display = 'none';
+                } else {
+                    submenu.style.display = 'block';
+                }
+                e.stopPropagation();
+                e.preventDefault();
+            });
+        });
+
+        function mostrarCard(id) {
+    fecharCards();
+    const card = document.getElementById(id);
+    card.style.display = 'block';
+    card.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+  function fecharCards() {
+    const cards = document.querySelectorAll('.card-detalhado');
+    cards.forEach(card => card.style.display = 'none');
+  }
+
+ /* function adicionarCarrinho() {
+    const produto = {
+      nome: "A Empregada (Livro 1)",
+      imagem: "aempregada.jpg",
+      preco: "44.90"
+    };
+
+    // Recupera o carrinho atual ou cria um novo
+    let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+
+    // Adiciona o novo produto
+    carrinho.push(produto);
+
+    // Salva novamente no localStorage
+    localStorage.setItem('carrinho', JSON.stringify(carrinho));
+
+    // Redireciona para a nova página
+    window.open('carrinho.html', '_blank'); // abre em nova aba
+  }*/
+
+
+   function adicionarCarrinho(btn) {
+    // Subir até o card detalhado
+    const card = btn.closest(".card-body");
+    const nome = card.querySelector(".card-title").textContent.trim();
+    const precoTexto = card.querySelector(".card-text").textContent.trim();
+    const preco = parseFloat(precoTexto.replace("R$", "").replace(",", "."));
+    const imagem = btn.closest(".row").querySelector("img").getAttribute("src");
+
+    const item = {
+      nome: nome,
+      preco: preco,
+      imagem: imagem,
+      quantidade: 1
+    };
+
+    // Carregar carrinho existente ou criar novo
+    let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+
+    // Verificar se o item já existe
+    const existente = carrinho.find(i => i.nome === item.nome);
+    if (existente) {
+      existente.quantidade += 1;
+    } else {
+      carrinho.push(item);
+    }
+
+    // Salvar de volta no localStorage
+    localStorage.setItem("carrinho", JSON.stringify(carrinho));
+
+    // Feedback para o usuário
+    alert(`"${item.nome}" foi adicionado ao carrinho.`);
+  }
+
+
+
+
+  // Gerenciamento de favoritos
+let favoritos = JSON.parse(localStorage.getItem('livrosFavoritos')) || [];
+
+function toggleFavorito(id, titulo, preco, imagem) {
+  const livro = {
+    id: id,
+    titulo: titulo,
+    preco: preco,
+    imagem: imagem,
+    conteudo: titulo, 
+    descricao: titulo 
+  };
+  
+  const index = favoritos.findIndex(fav => fav.id === id);
+  const heartBtn = document.querySelector(`#heart-${id}`);
+  
+  if (index === -1) {
+    favoritos.push(livro);
+    heartBtn.classList.add('heart-filled');
+    heartBtn.querySelector('.heart-icon').setAttribute('fill', 'red');
+    mostrarMensagem(`"${titulo}" foi adicionado aos favoritos!`, 'success');
+  } else {
+    favoritos.splice(index, 1);
+    heartBtn.classList.remove('heart-filled');
+    heartBtn.querySelector('.heart-icon').setAttribute('fill', 'none');
+    mostrarMensagem(`"${titulo}" foi removido dos favoritos.`, 'info');
+  }
+  
+  localStorage.setItem('livrosFavoritos', JSON.stringify(favoritos));
+}
+
+function mostrarMensagem(texto, tipo) {
+  const mensagemExistente = document.querySelector('.mensagem');
+  if (mensagemExistente) {
+    mensagemExistente.remove();
+  }
+
+  const mensagem = document.createElement('div');
+  mensagem.textContent = texto;
+  mensagem.className = `mensagem ${tipo}`;
+  document.body.appendChild(mensagem);
+  
+  setTimeout(() => {
+    mensagem.remove();
+  }, 3000);
+}
+
+
+
+/*// Inicialização
+document.addEventListener('DOMContentLoaded', () => {
+  // Atualizar estado inicial dos botões de favorito
+  favoritos.forEach(fav => {
+    const heartBtn = document.querySelector(`#heart-${fav.id}`);
+    if (heartBtn) {
+      heartBtn.classList.add('heart-filled');
+      heartBtn.querySelector('.heart-icon').setAttribute('fill', 'red');
+    }
+  });
+})
+
+ // Funções do carrinho
+function adicionarCarrinho() {
+  // Implementar lógica do carrinho aqui
+  alert('Produto adicionado ao carrinho!');
+}*/
+
+
+
+ 
+
+    </script>
+    
+</body>
+</html>
